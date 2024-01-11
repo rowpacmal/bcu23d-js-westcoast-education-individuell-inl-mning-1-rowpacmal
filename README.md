@@ -1,8 +1,8 @@
-# Westcoast Education by @rowpacmal
+# WestCoast Education
 Vi har blivit kontaktade av WestCoast Education, som behöver vår hjälp att modernisera plattform. Vi har fått följande information av deras beställare.
 
 ## Bakgrund
-WestCoast Educationär ett utbildningsföretag som har sinplacering på västkusten strax norr om Göteborg. Vi har varit iutbildningsbranschen i snart 40 år. Vårt affärsmål är och harvarit att tillhandahålla tekniska utbildningar inom IT-området.
+WestCoast Education är ett utbildningsföretag som har sinplacering på västkusten strax norr om Göteborg. Vi har varit iutbildningsbranschen i snart 40 år. Vårt affärsmål är och harvarit att tillhandahålla tekniska utbildningar inom IT-området.
 Vi har varit väldigt framgångsrika i alla år. Vi harspecialiserat oss på framförallt systemutvecklingsutbildningarinom webb och mobila lösningar.
 
 Vårt koncept har och är fortfarande att tillhandahållaklassrums utbildningar där elever och lärare möts. Vi erbjuderäven distansutbildning där elever kan närvara via länk tillklassrum där en lärare genomför lektionen.
