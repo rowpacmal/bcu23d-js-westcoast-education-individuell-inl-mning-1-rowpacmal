@@ -1,6 +1,33 @@
 {
   "courses": [],
-  "students": [],
+  "students": [
+    {
+      "id": "a85a",
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "phone": "",
+      "accountName": "",
+      "password": "",
+      "role": "read",
+      "address": "",
+      "birthDate": "",
+      "enrolledCourses": []
+    },
+    {
+      "id": "cc94",
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "phone": "",
+      "accountName": "",
+      "password": "",
+      "role": "read",
+      "address": "",
+      "birthDate": "",
+      "enrolledCourses": []
+    }
+  ],
   "teachers": [],
   "administrators": [
     {

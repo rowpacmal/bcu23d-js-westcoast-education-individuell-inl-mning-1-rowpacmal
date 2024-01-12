@@ -71,7 +71,7 @@ class User {
 
 // *student template* //
 class Student extends User {
-  constructor(
+  constructor([
     firstName,
     lastName,
     email,
@@ -80,12 +80,12 @@ class Student extends User {
     birthDate,
     accountName,
     password,
-    role
-  ) {
-    super(firstName, lastName, email, phone, accountName, password, role);
+  ]) {
+    super(firstName, lastName, email, phone, accountName, password);
     this.address = address;
     this.birthDate = birthDate;
     this.enrolledCourses = [];
+    this.role = 'read';
   }
 }
 
@@ -98,13 +98,13 @@ class Teacher extends User {
     phone,
     details,
     accountName,
-    password,
-    role
+    password
   ) {
-    super(firstName, lastName, email, phone, accountName, password, role);
+    super(firstName, lastName, email, phone, accountName, password);
     this.teacherDetails = details;
     this.qualifications = [];
     this.coursesHeld = [];
+    this.role = 'write';
   }
 }
 
