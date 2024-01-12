@@ -1,0 +1,14 @@
+{
+  "courses": [
+    {
+      "name": "Course",
+      "id": 1
+    }
+  ],
+  "land": [
+    {
+      "name": "Land",
+      "id": 1
+    }
+  ]
+}
