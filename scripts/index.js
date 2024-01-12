@@ -1,13 +1,13 @@
 import HttpClient from './http.js';
-import { Course, User, Student } from './classes.js';
+import { Course, User, Student, Teacher } from './classes.js';
 
 const addCourse = new Course(
   'JavaScript for Dummies',
   'jsfd23',
   'Remote',
   'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda nam error adipisci ea non nihil architecto ratione similique, quas, eos, mollitia accusantium iusto amet reprehenderit doloremque voluptatibus libero veritatis.',
-  new Date('01/01/2023'),
-  20,
+  new Date('03/14/2023'),
+  30,
   true,
   29.99,
   ''
@@ -35,9 +35,16 @@ const addStudent = new Student(
   'read'
 );
 
-console.log(addCourse);
-console.log(addUser.getFullName());
-console.log(addUser);
-console.log(addStudent);
-console.log(addStudent.getFullName());
-// new HttpClient('http://localhost:3000/courses').set(addCourse);
+const addTeacher = new Teacher(
+  'Karen',
+  'Daren',
+  'johndoe@me.io',
+  '123456789',
+  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda nam error adipisci ea non nihil architecto ratione similique, quas, eos, mollitia accusantium iusto amet reprehenderit doloremque voluptatibus libero veritatis.',
+  'john.doe',
+  '1234',
+  'read'
+);
+
+console.log(addCourse.courseStart);
+console.log(addCourse.getEndDate());

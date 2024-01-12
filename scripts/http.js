@@ -27,7 +27,7 @@ export default class HttpClient {
   }
 
   // *add new data to the database* //
-  async set(data) {
+  async add(data) {
     try {
       const reply = await fetch(this.#url, {
         method: 'POST',
@@ -44,26 +44,26 @@ export default class HttpClient {
       }
     } catch (error) {
       throw new Error(
-        `Something unexpected occur with the set() method, please refer to the following ${error}`
+        `Something unexpected occur with the add() method, please refer to the following ${error}`
       );
     }
   }
 
   // *remove data from the database* //
-  async delete() {
+  async remove() {
     try {
       const reply = await fetch(this.#url, {
         method: 'DELETE',
       });
     } catch (error) {
       throw new Error(
-        `Something unexpected occur with the delete() method, please refer to the following ${error}`
+        `Something unexpected occur with the remove() method, please refer to the following ${error}`
       );
     }
   }
 
   // *update data in the database* //
-  async patch(data) {
+  async update(data) {
     try {
       const reply = await fetch(this.#url, {
         method: 'PUT',
@@ -80,7 +80,7 @@ export default class HttpClient {
       }
     } catch (error) {
       throw new Error(
-        `Something unexpected occur with the patch() method, please refer to the following ${error}`
+        `Something unexpected occur with the update() method, please refer to the following ${error}`
       );
     }
   }
