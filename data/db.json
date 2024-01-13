@@ -60,10 +60,6 @@
   "administrators": [
     {
       "id": "admin",
-      "firstName": "",
-      "lastName": "",
-      "email": "",
-      "phone": "",
       "accountName": "admin",
       "password": "admin",
       "role": "admin"

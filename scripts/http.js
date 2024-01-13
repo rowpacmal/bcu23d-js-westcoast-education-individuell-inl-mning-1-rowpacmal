@@ -21,7 +21,7 @@ export default class HttpClient {
       }
     } catch (error) {
       throw new Error(
-        `Something unexpected occur with the get() method, please refer to the following ${error}`
+        `Something unexpected occurred with the get() method. Please refer to the following ${error}`
       );
     }
   }
@@ -44,7 +44,7 @@ export default class HttpClient {
       }
     } catch (error) {
       throw new Error(
-        `Something unexpected occur with the add() method, please refer to the following ${error}`
+        `Something unexpected occurred with the add() method. Please refer to the following ${error}`
       );
     }
   }
@@ -57,7 +57,7 @@ export default class HttpClient {
       });
     } catch (error) {
       throw new Error(
-        `Something unexpected occur with the remove() method, please refer to the following ${error}`
+        `Something unexpected occurred with the remove() method. Please refer to the following ${error}`
       );
     }
   }
@@ -80,7 +80,7 @@ export default class HttpClient {
       }
     } catch (error) {
       throw new Error(
-        `Something unexpected occur with the update() method, please refer to the following ${error}`
+        `Something unexpected occurred with the update() method. Please refer to the following ${error}`
       );
     }
   }
