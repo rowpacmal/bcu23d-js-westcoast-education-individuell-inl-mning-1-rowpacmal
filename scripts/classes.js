@@ -3,64 +3,49 @@
 // !================================! //
 // *course template* //
 class Course {
-  constructor(
+  constructor([
     title,
     id,
+    instructor,
     type,
     details,
     startDate,
     length,
     booking,
     fee,
-    image
-  ) {
+    image,
+  ]) {
     this.title = title;
-    this._instructors = [];
-    this.participants = [];
     this.courseId = id;
+    this.instructor = instructor;
     this.courseType = type;
     this.courseDetails = details;
-    this._courseStart = startDate;
+    this.courseStart = startDate;
     this.courseLength = length;
     this.booking = booking;
     this.enrollmentFee = fee;
     this.coverImage = image;
+    this.participants = [];
   }
+}
 
-  // getters
-  get instructors() {
-    return this._instructors;
-  }
-
-  get courseStart() {
-    return this._courseStart.toLocaleString('sv-SE').split(' ')[0];
-  }
-
-  // setters
-  set instructors(teacher) {
-    this._instructors.push(teacher);
-  }
-
-  // public methods
-  getEndDate() {
-    const date = this._courseStart;
-    date.setDate(date.getDate() + this.courseLength);
-
-    const formattedDate = date.toLocaleString('sv-SE').split(' ')[0];
-    return formattedDate;
+// *account template* //
+class Account {
+  constructor(accountName, password, role) {
+    this.accountName = accountName;
+    this.password = password;
+    this.role = role;
   }
 }
 
 // *user template* //
-class User {
+class User extends Account {
   constructor(firstName, lastName, email, phone, accountName, password, role) {
+    super(accountName, password, role);
     this.firstName = firstName;
     this.lastName = lastName;
     this.email = email;
     this.phone = phone;
-    this.accountName = accountName;
-    this.password = password;
-    this.role = role;
   }
 
   // public methods
@@ -109,4 +94,4 @@ class Teacher extends User {
 }
 
 // *export classes* //
-export { Course, User, Student, Teacher };
+export { Course, Account, User, Student, Teacher };

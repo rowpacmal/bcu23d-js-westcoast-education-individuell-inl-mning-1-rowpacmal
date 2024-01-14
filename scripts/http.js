@@ -1,87 +1,69 @@
 // !================================! //
 // !connect to the databases =======! //
 // !================================! //
+// *client* //
+// export (default)
 export default class HttpClient {
-  // private field
   #url;
 
   constructor(url) {
     this.#url = url;
   }
 
-  // *get data from the database* //
+  // get data from the database
   async get() {
-    try {
-      const reply = await fetch(this.#url);
-
-      if (reply.ok) {
-        return await reply.json();
-      } else {
-        throw new Error(`${reply.status} ${reply.statusText}`);
-      }
-    } catch (error) {
-      throw new Error(
-        `Something unexpected occur with the get() method, please refer to the following ${error}`
-      );
-    }
+    return tryCatch('get', 'GET', this.#url);
   }
 
-  // *add new data to the database* //
+  // add new data to the database
   async add(data) {
-    try {
-      const reply = await fetch(this.#url, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
-
-      if (reply.ok) {
-        return await reply.json();
-      } else {
-        throw new Error(`${reply.status} ${reply.statusText}`);
-      }
-    } catch (error) {
-      throw new Error(
-        `Something unexpected occur with the add() method, please refer to the following ${error}`
-      );
-    }
+    return tryCatch('add', 'POST', this.#url, data);
   }
 
-  // *remove data from the database* //
+  // remove data from the database
   async remove() {
-    try {
-      const reply = await fetch(this.#url, {
-        method: 'DELETE',
-      });
-    } catch (error) {
-      throw new Error(
-        `Something unexpected occur with the remove() method, please refer to the following ${error}`
-      );
-    }
+    tryCatch('remove', 'DELETE', this.#url);
   }
 
-  // *update data in the database* //
+  // update data in the database
   async update(data) {
-    try {
-      const reply = await fetch(this.#url, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
-
-      if (reply.ok) {
-        return await reply.json();
-      } else {
-        throw new Error(`${reply.status} ${reply.statusText}`);
-      }
-    } catch (error) {
-      throw new Error(
-        `Something unexpected occur with the update() method, please refer to the following ${error}`
-      );
-    }
+    return tryCatch('update', 'PUT', this.#url, data);
   }
 }
+
+// *utilities* //
+// try catch
+const tryCatch = async (name, method, url, data) => {
+  const options = fetchRequestOptions(method, data);
+  const fetchRequest = fetch(url, options);
+
+  try {
+    const response = await fetchRequest;
+
+    if (method !== 'DELETE') {
+      if (response.ok) {
+        return await response.json();
+      } else {
+        throw new Error(`${response.status} ${response.statusText}`);
+      }
+    }
+  } catch (error) {
+    throw new Error(
+      `Something unexpected occurred with the ${name}() method. Please refer to the following ${error}`
+    );
+  }
+};
+
+// fetch request option
+const fetchRequestOptions = (method, data) => {
+  const options = { method: method };
+
+  if (method === 'POST' || method === 'PUT') {
+    options.headers = {
+      'Content-Type': 'application/json',
+    };
+    options.body = JSON.stringify(data);
+  }
+
+  return options;
+};

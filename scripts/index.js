@@ -1,50 +1,31 @@
-import HttpClient from './http.js';
-import { Course, User, Student, Teacher } from './classes.js';
+console.time('Performance Test');
+import {
+  getFromDatabase,
+  saveToDatabase,
+  deleteFromDatabase,
+  updateDatabase,
+} from './utilities.js';
 
-const addCourse = new Course(
-  'JavaScript for Dummies',
-  'jsfd23',
-  'Remote',
-  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda nam error adipisci ea non nihil architecto ratione similique, quas, eos, mollitia accusantium iusto amet reprehenderit doloremque voluptatibus libero veritatis.',
-  new Date('03/14/2023'),
-  30,
-  true,
-  29.99,
-  ''
-);
+const students = await getFromDatabase('students');
+console.log(students);
 
-const addUser = new User(
-  'John',
-  'Doe',
-  'johndoe@me.io',
-  '123456789',
-  'john.doe',
-  '1234',
-  'read'
-);
+const person = await getFromDatabase('students', '7c96');
+console.log(person);
 
-const addStudent = new Student(
-  'Mary',
-  'Sue',
-  'johndoe@me.io',
-  '123456789',
-  '123 mestreet',
-  '1990/01/01',
-  'john.doe',
-  '1234',
-  'read'
-);
+/* saveToDatabase('students', {
+  name: 'Rowel',
+  text: 'rowel är en bitch!',
+  rank: '100% crazy',
+  quote: 'Poopoo!',
+}); */
 
-const addTeacher = new Teacher(
-  'Karen',
-  'Daren',
-  'johndoe@me.io',
-  '123456789',
-  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda nam error adipisci ea non nihil architecto ratione similique, quas, eos, mollitia accusantium iusto amet reprehenderit doloremque voluptatibus libero veritatis.',
-  'john.doe',
-  '1234',
-  'read'
-);
+/* updateDatabase('students', 'c122', {
+  name: 'Vincent',
+  text: 'vincent är cool!',
+  rank: '100% snygg',
+  quote: 'Peepee!',
+}); */
 
-console.log(addCourse.courseStart);
-console.log(addCourse.getEndDate());
+// deleteFromDatabase('students', '1be3');
+
+console.timeEnd('Performance Test');

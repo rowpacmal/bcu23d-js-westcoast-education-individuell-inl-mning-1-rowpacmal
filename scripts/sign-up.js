@@ -1,21 +1,15 @@
-import HttpClient from './http.js';
-import { Student } from './classes.js';
+import { saveToDatabase, convertFormData } from './utilities.js';
 
 const form = document.querySelector('#signUpForm');
 
 const sendRegistrationForm = async (event) => {
   event.preventDefault();
 
-  const account = new FormData(form);
-  const user = [...account.values()];
+  const data = convertFormData(form);
+  data.role = 'read';
+  data.enrolledCourses = [];
 
-  saveToDatabase(new Student(user));
-};
-
-const saveToDatabase = async (user) => {
-  const url = 'http://localhost:3000/students';
-
-  await new HttpClient(url).add(user);
+  saveToDatabase('students', data);
 };
 
 form.addEventListener('submit', sendRegistrationForm);
