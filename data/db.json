@@ -84,10 +84,39 @@
       "enrolledCourses": []
     },
     {
+      "name": "Vincent",
       "text": "vincent är cool!",
       "rank": "100% snygg",
       "quote": "Peepee!",
       "id": "7c96"
+    },
+    {
+      "id": "3a67",
+      "name": "Rowel",
+      "text": "rowel är en bitch!",
+      "rank": "100% crazy",
+      "quote": "Poopoo!"
+    },
+    {
+      "id": "6ce8",
+      "name": "Rowel",
+      "text": "rowel är en bitch!",
+      "rank": "100% crazy",
+      "quote": "Poopoo!"
+    },
+    {
+      "id": "f986",
+      "name": "Rowel",
+      "text": "rowel är en bitch!",
+      "rank": "100% crazy",
+      "quote": "Poopoo!"
+    },
+    {
+      "id": "71ff",
+      "name": "Rowel",
+      "text": "rowel är en bitch!",
+      "rank": "100% crazy",
+      "quote": "Poopoo!"
     }
   ],
   "teachers": [],

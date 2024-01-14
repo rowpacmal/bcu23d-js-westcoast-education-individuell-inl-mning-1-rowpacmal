@@ -3,27 +3,26 @@ import HttpClient from './http.js';
 
 // *controls* //
 const localhost = 'http://localhost:3000';
-const methods = ['GET', 'ADD', 'REMOVE', 'UPDATE'];
 
 // *database* //
 // get
 const getFromDatabase = async (database, id) => {
-  return loadDatabase(methods[0], database, id);
+  return loadDatabase('GET', database, id);
 };
 
 // add
 const saveToDatabase = async (database, data) => {
-  loadDatabase(methods[1], database, '', data);
+  loadDatabase('ADD', database, '', data);
 };
 
 // remove
 const deleteFromDatabase = async (database, id) => {
-  loadDatabase(methods[2], database, id);
+  loadDatabase('REMOVE', database, id);
 };
 
 // update
 const updateDatabase = async (database, id, data) => {
-  loadDatabase(methods[3], database, id, data);
+  loadDatabase('UPDATE', database, id, data);
 };
 
 // load
@@ -46,7 +45,7 @@ const loadDatabase = async (method, database, id, data) => {
 
     default:
       throw new Error(
-        `An error occurred with the loadDatabase() function's output parameter[method: any]. Please resolve the aforementioned issue by providing a value from one of the following: 'GET', 'ADD', 'REMOVE', or 'UPDATE'`
+        `An error occurred with the loadDatabase() function's output parameter[method: '${method}']. Please resolve the aforementioned issue by providing a value from one of the following: 'GET', 'ADD', 'REMOVE', or 'UPDATE'`
       );
   }
 };

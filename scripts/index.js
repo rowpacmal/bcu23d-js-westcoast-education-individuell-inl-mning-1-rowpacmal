@@ -1,3 +1,4 @@
+console.time('Performance Test');
 import {
   getFromDatabase,
   saveToDatabase,
@@ -7,11 +8,24 @@ import {
 
 const students = await getFromDatabase('students');
 console.log(students);
-const person = await getFromDatabase('students', 'a85a');
-console.log(person);
 
-// updateDatabase('students', '7c96', {
-//   text: 'vincent är cool!',
-//   rank: '100% snygg',
-//   quote: 'Peepee!',
-// });
+/* const person = await getFromDatabase('students', '7c96');
+console.log(person); */
+
+saveToDatabase('students', {
+  name: 'Rowel',
+  text: 'rowel är en bitch!',
+  rank: '100% crazy',
+  quote: 'Poopoo!',
+});
+
+/* updateDatabase('students', 'f519', {
+  name: 'Vincent',
+  text: 'vincent är cool!',
+  rank: '100% snygg',
+  quote: 'Peepee!',
+}); */
+
+// deleteFromDatabase('students', 'f6e6');
+
+console.timeEnd('Performance Test');
