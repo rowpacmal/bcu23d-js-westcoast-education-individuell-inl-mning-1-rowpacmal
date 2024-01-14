@@ -45,7 +45,7 @@ const loadDatabase = async (method, database, id, data) => {
 
     default:
       throw new Error(
-        `An error occurred with the loadDatabase() function's output parameter[method: '${method}']. Please resolve the aforementioned issue by providing a value from one of the following: 'GET', 'ADD', 'REMOVE', or 'UPDATE'`
+        `An error occurred with the loadDatabase() function's output parameter[method: '${method}']. Please resolve the aforementioned issue by providing a correct value for the method parameter. Valid options are: 'GET', 'ADD', 'REMOVE', or 'UPDATE'`
       );
   }
 };
@@ -53,13 +53,12 @@ const loadDatabase = async (method, database, id, data) => {
 // *utilities* //
 // get url
 const getURL = (database, id) => {
-  const host = localhost;
   const location = database;
 
   if (id) {
-    return `${host}/${location}/${id}`;
+    return `${localhost}/${location}/${id}`;
   } else {
-    return `${host}/${location}`;
+    return `${localhost}/${location}`;
   }
 };
 

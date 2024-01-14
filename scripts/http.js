@@ -12,32 +12,33 @@ export default class HttpClient {
 
   // get data from the database
   async get() {
-    return tryCatch('GET', this.#url);
+    return tryCatch('get', 'GET', this.#url);
   }
 
   // add new data to the database
   async add(data) {
-    return tryCatch('POST', this.#url, data);
+    return tryCatch('add', 'POST', this.#url, data);
   }
 
   // remove data from the database
   async remove() {
-    tryCatch('DELETE', this.#url);
+    tryCatch('remove', 'DELETE', this.#url);
   }
 
   // update data in the database
   async update(data) {
-    return tryCatch('PUT', this.#url, data);
+    return tryCatch('update', 'PUT', this.#url, data);
   }
 }
 
 // *utilities* //
 // try catch
-const tryCatch = async (method, url, data) => {
-  const retrieve = fetchRequest(method, url, data);
+const tryCatch = async (name, method, url, data) => {
+  const options = fetchRequestOptions(method, data);
+  const fetchRequest = fetch(url, options);
 
   try {
-    const response = await retrieve.request;
+    const response = await fetchRequest;
 
     if (method !== 'DELETE') {
       if (response.ok) {
@@ -48,58 +49,21 @@ const tryCatch = async (method, url, data) => {
     }
   } catch (error) {
     throw new Error(
-      `Something unexpected occurred with the ${retrieve.error} method. Please refer to the following ${error}`
+      `Something unexpected occurred with the ${name}() method. Please refer to the following ${error}`
     );
   }
 };
 
-// fetch request
-const fetchRequest = (method, url, data) => {
-  const retrieve = {};
-  const request = getRequestOptions(method, data);
-
-  console.log(request);
-
-  switch (method) {
-    case 'GET':
-      retrieve.request = fetch(url);
-      retrieve.error = 'get()';
-      break;
-
-    case 'POST':
-      retrieve.request = fetch(url, request);
-      retrieve.error = 'add()';
-      break;
-
-    case 'DELETE':
-      retrieve.request = fetch(url, request);
-      retrieve.error = 'remove()';
-      break;
-
-    case 'PUT':
-      retrieve.request = fetch(url, request);
-      retrieve.error = 'update()';
-      break;
-
-    default:
-      throw new Error(
-        `An error occurred with the tryCatch() function's output parameter[method: '${method}']. Please resolve the aforementioned issue by providing a value from one of the following: 'GET', 'POST', 'DELETE', or 'PUT'`
-      );
-  }
-
-  return retrieve;
-};
-
-// get fetch request option
-const getRequestOptions = (method, data) => {
-  const request = { method: method };
+// fetch request option
+const fetchRequestOptions = (method, data) => {
+  const options = { method: method };
 
   if (method === 'POST' || method === 'PUT') {
-    request.headers = {
+    options.headers = {
       'Content-Type': 'application/json',
     };
-    request.body = JSON.stringify(data);
+    options.body = JSON.stringify(data);
   }
 
-  return request;
+  return options;
 };

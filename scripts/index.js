@@ -9,23 +9,23 @@ import {
 const students = await getFromDatabase('students');
 console.log(students);
 
-/* const person = await getFromDatabase('students', '7c96');
-console.log(person); */
+const person = await getFromDatabase('students', '7c96');
+console.log(person);
 
-saveToDatabase('students', {
+/* saveToDatabase('students', {
   name: 'Rowel',
   text: 'rowel är en bitch!',
   rank: '100% crazy',
   quote: 'Poopoo!',
-});
+}); */
 
-/* updateDatabase('students', 'f519', {
+/* updateDatabase('students', 'c122', {
   name: 'Vincent',
   text: 'vincent är cool!',
   rank: '100% snygg',
   quote: 'Peepee!',
 }); */
 
-// deleteFromDatabase('students', 'f6e6');
+// deleteFromDatabase('students', '1be3');
 
 console.timeEnd('Performance Test');
