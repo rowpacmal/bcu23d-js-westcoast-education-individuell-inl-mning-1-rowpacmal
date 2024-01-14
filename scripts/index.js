@@ -1,12 +1,17 @@
-import { createElement, createContainer } from './dom.js';
+import {
+  getFromDatabase,
+  saveToDatabase,
+  deleteFromDatabase,
+  updateDatabase,
+} from './utilities.js';
 
-const section = createElement('section', document.body);
+const students = await getFromDatabase('students');
+console.log(students);
+const person = await getFromDatabase('students', 'a85a');
+console.log(person);
 
-const span = createContainer(
-  'div',
-  'span',
-  section,
-  createElement('span', false, 'Hej Vincent!')
-);
-
-createElement('p', span, 'This is some text in a paragraph');
+// updateDatabase('students', '7c96', {
+//   text: 'vincent är cool!',
+//   rank: '100% snygg',
+//   quote: 'Peepee!',
+// });

@@ -1,14 +1,14 @@
 import { getFromDatabase, updateDatabase } from './utilities.js';
 
 const form = document.querySelector('#signInForm');
-const activeDatabase = 'students';
+const location = 'students';
 
 const callForUserAccount = async (event) => {
   event.preventDefault();
 
   const signIn = new FormData(form);
   const signInValues = [...signIn.values()];
-  const userAccounts = await getFromDatabase(activeDatabase);
+  const userAccounts = await getFromDatabase(location);
 
   verifyUserAccount(userAccounts, signInValues);
 };
@@ -34,7 +34,7 @@ const verifyUserAccount = (database, formValue) => {
     );
 
     // update the active user account with the sign in key
-    updateDatabase(activeDatabase, activeUser.id, activeUser);
+    updateDatabase(location, activeUser.id, activeUser);
     console.info('Status:', 'Success!');
   } else {
     console.warn('Error:', 'Fail?');

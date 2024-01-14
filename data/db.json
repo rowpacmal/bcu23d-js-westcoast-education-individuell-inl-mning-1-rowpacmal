@@ -1,5 +1,20 @@
 {
-  "courses": [],
+  "courses": [
+    {
+      "id": "f130",
+      "title": "JavaScript",
+      "courseId": "JS24",
+      "instructors": "",
+      "courseType": "classroom",
+      "courseDetails": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda nam error adipisci ea non nihil architecto ratione similique, quas, eos, mollitia accusantium iusto amet reprehenderit doloremque voluptatibus libero veritatis.",
+      "courseStart": "2024-01-15",
+      "courseLength": "14",
+      "booking": "yes",
+      "enrollmentFee": "9.99",
+      "coverImage": "jojo-steel-ball-run-gyro-zeppeli.jpg",
+      "participants": []
+    }
+  ],
   "students": [
     {
       "id": "a85a",
@@ -13,7 +28,7 @@
       "address": "Street 10",
       "birthDate": "1993-03-29",
       "enrolledCourses": [],
-      "signInKey": "vt57m1uf"
+      "signInKey": "5mlqr03i"
     },
     {
       "id": "cc94",
@@ -54,6 +69,25 @@
       "address": "Street 88",
       "birthDate": "2024-01-31",
       "enrolledCourses": []
+    },
+    {
+      "id": "94e6",
+      "firstName": "Peter",
+      "lastName": "Kala",
+      "email": "sample@mail.io",
+      "phone": "+46123456789",
+      "address": "Street 66",
+      "birthDate": "2024-01-11",
+      "accountName": "Peter",
+      "password": "Peter1",
+      "role": "read",
+      "enrolledCourses": []
+    },
+    {
+      "text": "vincent är cool!",
+      "rank": "100% snygg",
+      "quote": "Peepee!",
+      "id": "7c96"
     }
   ],
   "teachers": [],

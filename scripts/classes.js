@@ -3,21 +3,21 @@
 // !================================! //
 // *course template* //
 class Course {
-  constructor(
+  constructor([
     title,
     id,
+    instructor,
     type,
     details,
     startDate,
     length,
     booking,
     fee,
-    image
-  ) {
+    image,
+  ]) {
     this.title = title;
-    this.instructors = [];
-    this.participants = [];
     this.courseId = id;
+    this.instructor = instructor;
     this.courseType = type;
     this.courseDetails = details;
     this.courseStart = startDate;
@@ -25,6 +25,7 @@ class Course {
     this.booking = booking;
     this.enrollmentFee = fee;
     this.coverImage = image;
+    this.participants = [];
   }
 }
 
