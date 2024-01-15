@@ -4,14 +4,28 @@
       "id": "f130",
       "title": "JavaScript",
       "courseId": "JS24",
-      "instructors": "",
-      "courseType": "classroom",
-      "courseDetails": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda nam error adipisci ea non nihil architecto ratione similique, quas, eos, mollitia accusantium iusto amet reprehenderit doloremque voluptatibus libero veritatis.",
+      "instructors": "Teacher 1",
+      "courseType": "Classroom",
+      "courseDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda nam error adipisci ea non nihil architecto ratione similique, quas, eos, mollitia accusantium iusto amet reprehenderit doloremque voluptatibus libero veritatis.",
       "courseStart": "2024-01-15",
       "courseLength": "14",
       "booking": "yes",
       "enrollmentFee": "9.99",
-      "coverImage": "jojo-steel-ball-run-gyro-zeppeli.jpg",
+      "coverImage": "image.jpg",
+      "participants": []
+    },
+    {
+      "id": "4370",
+      "title": "JavaScript",
+      "courseId": "JS24",
+      "instructors": "Teacher 1",
+      "courseType": "Classroom",
+      "courseDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda nam error adipisci ea non nihil architecto ratione similique, quas, eos, mollitia accusantium iusto amet reprehenderit doloremque voluptatibus libero veritatis.",
+      "courseStart": "2024-01-15",
+      "courseLength": "14",
+      "booking": "yes",
+      "enrollmentFee": "9.99",
+      "coverImage": "image.jpg",
       "participants": []
     }
   ],
@@ -20,7 +34,7 @@
       "id": "a85a",
       "firstName": "Rowel",
       "lastName": "Baba",
-      "email": "sample@mail.io",
+      "email": "rowel@mail.io",
       "phone": "+46123456789",
       "accountName": "Rowel",
       "password": "Rowel1",
@@ -28,13 +42,13 @@
       "address": "Street 10",
       "birthDate": "1993-03-29",
       "enrolledCourses": [],
-      "signInKey": "5mlqr03i"
+      "signInKey": "s5zt3n1"
     },
     {
       "id": "cc94",
       "firstName": "Jenni",
       "lastName": "Dula",
-      "email": "sample@mail.io",
+      "email": "jenni@mail.io",
       "phone": "+46123456789",
       "accountName": "Jenni",
       "password": "Jenni1",
@@ -48,7 +62,7 @@
       "id": "e890",
       "firstName": "Mark",
       "lastName": "Fafa",
-      "email": "sample@mail.io",
+      "email": "mark@mail.io",
       "phone": "+46123456789",
       "accountName": "Mark",
       "password": "Mark1",
@@ -61,7 +75,7 @@
       "id": "c3a4",
       "firstName": "Emil",
       "lastName": "Gogo",
-      "email": "sample@mail.io",
+      "email": "emil@mail.io",
       "phone": "+46123456789",
       "accountName": "Emil",
       "password": "Emil1",
@@ -74,7 +88,7 @@
       "id": "94e6",
       "firstName": "Peter",
       "lastName": "Kala",
-      "email": "sample@mail.io",
+      "email": "peter@mail.io",
       "phone": "+46123456789",
       "address": "Street 66",
       "birthDate": "2024-01-11",
@@ -82,34 +96,6 @@
       "password": "Peter1",
       "role": "read",
       "enrolledCourses": []
-    },
-    {
-      "name": "Vincent",
-      "text": "vincent är cool!",
-      "rank": "100% snygg",
-      "quote": "Peepee!",
-      "id": "7c96"
-    },
-    {
-      "id": "0633",
-      "name": "Rowel",
-      "text": "rowel är en bitch!",
-      "rank": "100% crazy",
-      "quote": "Poopoo!"
-    },
-    {
-      "name": "Vincent",
-      "text": "vincent är cool!",
-      "rank": "100% snygg",
-      "quote": "Peepee!",
-      "id": "c122"
-    },
-    {
-      "id": "5c44",
-      "name": "Rowel",
-      "text": "rowel är en bitch!",
-      "rank": "100% crazy",
-      "quote": "Poopoo!"
     }
   ],
   "teachers": [],

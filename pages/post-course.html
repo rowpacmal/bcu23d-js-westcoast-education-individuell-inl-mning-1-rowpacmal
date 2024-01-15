@@ -42,6 +42,7 @@
             id="instructors"
           >
             <option value="">--Select an instructor--</option>
+            <option value="Teacher 1">Teacher 1</option>
           </select>
         </div>
 
@@ -52,16 +53,16 @@
             id="courseType"
           >
             <option value="">--Select a Type--</option>
-            <option value="remote">Remote</option>
-            <option value="classroom">Classroom</option>
-            <option value="on-demand">On-Demand</option>
+            <option value="Remote">Remote</option>
+            <option value="Classroom">Classroom</option>
+            <option value="On-Demand">On-Demand</option>
           </select>
         </div>
         <div>
-          <label for="courseDetails">Details*:</label>
+          <label for="courseDescription">Description*:</label>
           <textarea
-            name="courseDetails"
-            id="courseDetails"
+            name="courseDescription"
+            id="courseDescription"
             cols="30"
             rows="10"
             placeholder="Description..."
@@ -88,15 +89,10 @@
         <div>
           <label for="booking">Bookable*:</label>
           <input
-            type="hidden"
-            name="booking"
-            value="no"
-          />
-          <input
-            type="checkbox"
+            type="text"
             name="booking"
             id="booking"
-            value="yes"
+            value="no"
           />
         </div>
         <div>
@@ -113,12 +109,18 @@
         <div>
           <label for="coverImage">Image*:</label>
           <input
-            type="file"
+            type="text"
             name="coverImage"
             id="coverImage"
           />
         </div>
         <button type="submit">Post</button>
+        <button
+          type="button"
+          id="getData"
+        >
+          Get Data
+        </button>
       </form>
     </div>
   </body>

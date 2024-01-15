@@ -1,14 +1,14 @@
-import { getFromDatabase, updateDatabase } from './utilities.js';
+import { handleDatabase } from './utilities.js';
 
 const form = document.querySelector('#signInForm');
-const location = 'students';
+const server = 'students';
 
 const callForUserAccount = async (event) => {
   event.preventDefault();
 
   const signIn = new FormData(form);
   const signInValues = [...signIn.values()];
-  const userAccounts = await getFromDatabase(location);
+  const userAccounts = await handleDatabase('GET', server);
 
   verifyUserAccount(userAccounts, signInValues);
 };
@@ -17,7 +17,8 @@ const verifyUserAccount = (database, formValue) => {
   // find an account from the database based on username and password
   const activeUser = database.find(
     (user) =>
-      user.accountName === formValue[0] && user.password === formValue[1]
+      (user.accountName === formValue[0] || user.email === formValue[0]) &&
+      user.password === formValue[1]
   );
 
   // check if the username and password provided is true or false
@@ -27,14 +28,14 @@ const verifyUserAccount = (database, formValue) => {
     // assign the key to users account
     activeUser.signInKey = randomKey;
 
-    // assign the key to the loacal storage of the device
+    // assign the key to the local storage of the device
     localStorage.setItem(
       'WestCoastEducationSignInKey',
       `${activeUser.id}-${activeUser.accountName}-${activeUser.signInKey}`
     );
 
     // update the active user account with the sign in key
-    updateDatabase(location, activeUser.id, activeUser);
+    handleDatabase('UPDATE', server, activeUser.id, activeUser);
     console.info('Status:', 'Success!');
   } else {
     console.warn('Error:', 'Fail?');

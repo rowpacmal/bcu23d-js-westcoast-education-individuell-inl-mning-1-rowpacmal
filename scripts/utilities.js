@@ -22,9 +22,7 @@ const handleDatabase = async (method, database, id, data) => {
 
     default:
       throw new Error(
-        `An error occurred with the handleDatabase() function's output parameter[method]: '${method}' is not a recognized option for the parameter
-        Valid options include: 'GET', 'ADD', 'REMOVE', or 'UPDATE'
-        Please resolve this issue by providing the correct value for the method parameter`
+        `An error occurred with the handleDatabase() function's output parameter[method]: ('${method}') is not a recognized option for the parameter. Valid options include ('GET', 'ADD', 'REMOVE', or 'UPDATE'). Please resolve this issue by providing the correct value for the method parameter.`
       );
   }
 };
@@ -33,12 +31,12 @@ const handleDatabase = async (method, database, id, data) => {
 // get url
 const getURL = (database, id) => {
   const localhost = 'http://localhost:3000';
-  const location = `${localhost}/${database}`;
+  const server = `${localhost}/${database}`;
 
   if (id) {
-    return `${location}/${id}`;
+    return `${server}/${id}`;
   } else {
-    return location;
+    return server;
   }
 };
 
