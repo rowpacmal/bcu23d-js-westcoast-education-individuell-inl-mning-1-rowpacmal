@@ -1,32 +1,9 @@
 // *import* //
 import HttpClient from './http.js';
 
-// *controls* //
-const localhost = 'http://localhost:3000';
-
 // *database* //
-// get
-const getFromDatabase = async (database, id) => {
-  return loadDatabase('GET', database, id);
-};
-
-// add
-const saveToDatabase = async (database, data) => {
-  loadDatabase('ADD', database, '', data);
-};
-
-// remove
-const deleteFromDatabase = async (database, id) => {
-  loadDatabase('REMOVE', database, id);
-};
-
-// update
-const updateDatabase = async (database, id, data) => {
-  loadDatabase('UPDATE', database, id, data);
-};
-
-// load
-const loadDatabase = async (method, database, id, data) => {
+// handle
+const handleDatabase = async (method, database, id, data) => {
   const url = getURL(database, id);
   const http = new HttpClient(url);
 
@@ -45,7 +22,9 @@ const loadDatabase = async (method, database, id, data) => {
 
     default:
       throw new Error(
-        `An error occurred with the loadDatabase() function's output parameter[method: '${method}']. Please resolve the aforementioned issue by providing a correct value for the method parameter. Valid options are: 'GET', 'ADD', 'REMOVE', or 'UPDATE'`
+        `An error occurred with the handleDatabase() function's output parameter[method]: '${method}' is not a recognized option for the parameter
+        Valid options include: 'GET', 'ADD', 'REMOVE', or 'UPDATE'
+        Please resolve this issue by providing the correct value for the method parameter`
       );
   }
 };
@@ -53,12 +32,13 @@ const loadDatabase = async (method, database, id, data) => {
 // *utilities* //
 // get url
 const getURL = (database, id) => {
-  const location = database;
+  const localhost = 'http://localhost:3000';
+  const location = `${localhost}/${database}`;
 
   if (id) {
-    return `${localhost}/${location}/${id}`;
+    return `${location}/${id}`;
   } else {
-    return `${localhost}/${location}`;
+    return location;
   }
 };
 
@@ -71,10 +51,4 @@ const convertFormData = (form) => {
 };
 
 // *export* //
-export {
-  getFromDatabase,
-  saveToDatabase,
-  deleteFromDatabase,
-  updateDatabase,
-  convertFormData,
-};
+export { handleDatabase, convertFormData };

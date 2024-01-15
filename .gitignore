@@ -1,3 +1,6 @@
 .vscode
 .DS_STORE
+Thumbs.db
+Desktop.ini
 node_modules
+package-lock.json
