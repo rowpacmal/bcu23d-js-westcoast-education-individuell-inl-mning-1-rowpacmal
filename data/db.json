@@ -1,0 +1,43 @@
+{
+  "courses": [
+    {
+      "id": "1473",
+      "name": "New Name"
+    },
+    {
+      "id": "4705",
+      "name": "New Name"
+    },
+    {
+      "id": "de1f",
+      "name": "New Name"
+    },
+    {
+      "name": "New Name",
+      "text": "New Text",
+      "id": "b669"
+    },
+    {
+      "id": "4f5f",
+      "name": "New Name"
+    },
+    {
+      "id": "58bf",
+      "name": "New Name"
+    },
+    {
+      "id": "9e72",
+      "name": "New Name"
+    },
+    {
+      "name": "New Name",
+      "text": "New Text",
+      "id": "96b6"
+    },
+    {
+      "id": "e1b0",
+      "name": "New Name"
+    }
+  ],
+  "users": []
+}
