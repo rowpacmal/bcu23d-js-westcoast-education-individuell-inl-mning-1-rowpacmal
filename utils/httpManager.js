@@ -19,7 +19,6 @@ export const httpManager = async (resource, method = 'GET', data) => {
 
     if (method !== 'DELETE') {
       if (response.ok) {
-        // ?ska det vara en await här? //
         return await response.json();
       } else {
         throw new Error(`${response.status} ${response.statusText}`);
