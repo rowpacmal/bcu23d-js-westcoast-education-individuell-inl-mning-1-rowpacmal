@@ -1,0 +1,64 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn {
+  color: $color1;
+  background-color: $color3;
+  border: none;
+  height: 50px;
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    color: $color2;
+    background-color: $color6;
+    scale: 1.1;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  &:active {
+    background-color: $color4;
+    scale: 1;
+  }
+
+  &--alt {
+    color: $color2;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      color: $color6;
+      background-color: transparent;
+    }
+
+    &:active {
+      color: $color4;
+    }
+  }
+
+  &--cart {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: $color2;
+    background-color: transparent;
+    width: 50px;
+    padding: 0;
+    border-radius: 50px;
+
+    &:hover,
+    &:focus {
+      background-color: $color6;
+    }
+
+    &:active {
+      background-color: $color4;
+    }
+  }
+}

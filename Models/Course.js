@@ -1,7 +1,6 @@
 export default class Course {
   #id = '';
   #title = '';
-  #courseId = '';
   #instructor = '';
   #courseType = '';
   #courseDetails = '';
@@ -16,7 +15,6 @@ export default class Course {
   constructor(
     id,
     title,
-    courseId,
     instructor,
     courseType,
     courseDetails,
@@ -30,7 +28,6 @@ export default class Course {
   ) {
     this.#id = id;
     this.#title = title;
-    this.#courseId = courseId;
     this.#instructor = instructor;
     this.#courseType = courseType;
     this.#courseDetails = courseDetails;
@@ -49,10 +46,6 @@ export default class Course {
 
   get title() {
     return this.#title;
-  }
-
-  get courseId() {
-    return this.#courseId;
   }
 
   get instructor() {
