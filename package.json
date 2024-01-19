@@ -1,10 +1,21 @@
 {
+  "name": "bcu23d-js-westcoast-education-individuell-inl-mning-1-rowpacmal",
+  "version": "1.0.0",
+  "description": "Vi har blivit kontaktade av WestCoast Education, som behöver vår hjälp att modernisera plattform. Vi har fått följande information av deras beställare.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npx json-server data/db.json\" \"npx sass --no-source-map --style=compressed --watch assets/styles/sass:assets/styles/css\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "concurrently": "^8.2.2",
     "json-server": "^1.0.0-alpha.21",
     "sass": "^1.69.7"
-  },
-  "scripts": {
-    "start": "concurrently \"npx json-server ./data/db.json\" \"npx sass --no-source-map --style=compressed --watch assets/styles/sass:assets/styles/css\" "
   }
 }

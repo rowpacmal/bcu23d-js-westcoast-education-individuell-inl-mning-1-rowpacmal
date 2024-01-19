@@ -14,10 +14,11 @@
   font-size: 1rem;
   font-weight: bold;
   transition: $transition;
+  cursor: pointer;
 
   &:hover,
   &:focus {
-    color: $color2;
+    color: #fff;
     background-color: $color6;
     scale: 1.1;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
@@ -29,7 +30,7 @@
   }
 
   &--alt {
-    color: $color2;
+    color: #fff;
     background-color: transparent;
 
     &:hover,
@@ -43,22 +44,49 @@
     }
   }
 
-  &--cart {
-    font-size: 1.5rem;
-    margin-right: 1rem;
-    color: $color2;
+  &--wire {
+    color: #fff;
     background-color: transparent;
+    border: 2px solid #fff;
     width: 50px;
     padding: 0;
-    border-radius: 50px;
 
     &:hover,
     &:focus {
-      background-color: $color6;
+      color: $color6;
+      background-color: transparent;
     }
 
     &:active {
-      background-color: $color4;
+      color: $color4;
     }
+  }
+
+  &--big {
+    font-size: 1.5rem;
+  }
+
+  &--very-big {
+    font-size: 3rem;
+    width: auto;
+    height: auto;
+    padding: 2rem 3rem;
+  }
+}
+
+.in-cart {
+  position: relative;
+  z-index: 5;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: 0;
+    right: -10px;
+    border-radius: 10px;
+    background-color: crimson;
+    z-index: 6;
   }
 }
