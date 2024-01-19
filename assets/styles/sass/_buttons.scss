@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.7rem;
 }
 
 .btn {
@@ -10,11 +10,16 @@
   background-color: $color3;
   border: none;
   height: 50px;
+  min-width: 50px;
   padding: 0 1rem;
   font-size: 1rem;
   font-weight: bold;
   transition: $transition;
   cursor: pointer;
+
+  i {
+    font-size: 1.5rem;
+  }
 
   &:hover,
   &:focus {
@@ -27,6 +32,49 @@
   &:active {
     background-color: $color4;
     scale: 1;
+  }
+
+  &--small {
+    height: 40px;
+    min-width: 40px;
+    padding: 0 0.75rem;
+    font-size: 0.75rem;
+
+    i {
+      font-size: 1rem;
+    }
+  }
+
+  &--big {
+    height: 60px;
+    min-width: 60px;
+    padding: 0 1.5rem;
+    font-size: 1.5rem;
+
+    i {
+      font-size: 2rem;
+    }
+  }
+
+  &--fixed {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 170px;
+
+    i {
+      margin-left: 0.5rem;
+    }
+
+    &-small {
+      gap: 0.25rem;
+      width: 120px;
+    }
+
+    &-big {
+      gap: 0.75rem;
+      width: 240px;
+    }
   }
 
   &--alt {
@@ -45,32 +93,19 @@
   }
 
   &--wire {
-    color: #fff;
     background-color: transparent;
-    border: 2px solid #fff;
-    width: 50px;
+    border: 2px solid;
+
     padding: 0;
 
     &:hover,
     &:focus {
       color: $color6;
-      background-color: transparent;
     }
 
     &:active {
       color: $color4;
     }
-  }
-
-  &--big {
-    font-size: 1.5rem;
-  }
-
-  &--very-big {
-    font-size: 3rem;
-    width: auto;
-    height: auto;
-    padding: 2rem 3rem;
   }
 }
 

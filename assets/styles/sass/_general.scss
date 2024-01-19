@@ -13,96 +13,6 @@ a {
   width: 200px;
 }
 
-.navbar {
-  // position: sticky;
-  top: 0;
-  background-color: $color1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  padding: 0 2rem;
-  box-shadow: 3px 0px 15px rgba(0, 0, 0, 0.5);
-  z-index: 999;
-}
-
-.westcoast-logo {
-  background-image: url(../../images/svg-edited2.svg);
-  background-size: cover;
-  width: 200px;
-}
-
-.search-bar {
-  display: flex;
-  align-items: center;
-  background-color: $color2;
-  position: relative;
-  width: 500px;
-  height: 50px;
-  border-radius: 50px;
-  padding: 0.5rem 1rem;
-  border: 1px solid $color4;
-  box-shadow: inset 3px 3px 7px rgba(0, 0, 0, 0.3);
-  z-index: 1;
-
-  .icon {
-    font-size: 1.2rem;
-    color: #757575;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 0.75rem;
-    border-right: 1px solid #757575;
-  }
-
-  .search {
-    background-color: transparent;
-    border: none;
-    width: 100%;
-    height: 100%;
-    padding-left: 0.75rem;
-    outline: none;
-  }
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  align-items: center;
-  width: 300px;
-  color: #fff;
-  list-style: none;
-
-  &__item {
-    transition: $transition;
-
-    &:hover,
-    &:focus {
-      scale: 1.1;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-    }
-
-    &:active {
-      scale: 1;
-    }
-  }
-
-  &__link {
-    color: $color2;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      color: $color6;
-    }
-
-    &:active {
-      color: $color4;
-    }
-  }
-}
-
 .hero {
   height: 500px;
   margin-bottom: 100px;
@@ -367,4 +277,8 @@ a {
 
 .browse {
   text-align: center;
+}
+
+.small-text {
+  font-size: 0.75rem;
 }
