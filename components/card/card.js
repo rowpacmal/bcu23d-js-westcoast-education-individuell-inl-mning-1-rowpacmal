@@ -1,28 +1,3 @@
-import { state } from '../../utils/config.js';
-
-const catalog = state.currentPage;
-let path;
-
-switch (catalog) {
-  case '/':
-  case '/index.html':
-    path = '.';
-    break;
-
-  case '/pages/courses.html':
-    path = '..';
-    break;
-
-  case '/pages/auth/user.html':
-  case '/components/home/home.html':
-    path = '../..';
-    break;
-
-  default:
-    console.info('image source path is missing');
-    break;
-}
-
 export const createCourseCard = (data) => {
   const div = document.createElement('div');
   div.classList.add('card');
@@ -31,14 +6,14 @@ export const createCourseCard = (data) => {
   div.innerHTML = `
   <a href="?id=${data.id}">
     <img
-    src="${path}/assets/images/courses/${data.coverImage}"
+    src="/assets/images/courses/${data.coverImage}"
     alt=""
     width="2400"
     height="1600"
     />
   </a>
 
-  <header>
+  <header class="card__header">
     <span class="small-text">(${data.courseNo})</span>
     <h4>${data.title}</h4>
   </header>
@@ -66,8 +41,9 @@ export const createCourseCard = (data) => {
 
   <div class="card-control">
     <div class="price">
-      <i class="bi-currency-dollar"></i>
-      <span>${data.enrollmentFee}</span>
+      <span>
+      <i class="bi-currency-dollar"></i>${data.enrollmentFee}
+      </span>
     </div>
     
     <div class="buttons">

@@ -89,22 +89,12 @@
 
     &:active {
       color: $color4;
-    }
-  }
-
-  &--wire {
-    background-color: transparent;
-    border: 2px solid;
-
-    padding: 0;
-
-    &:hover,
-    &:focus {
-      color: $color6;
+      background-color: transparent;
     }
 
-    &:active {
-      color: $color4;
+    &-wire {
+      border: 3px solid;
+      padding: 0;
     }
   }
 }

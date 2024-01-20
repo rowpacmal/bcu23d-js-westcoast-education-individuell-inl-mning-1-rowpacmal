@@ -2,6 +2,9 @@ body {
   font-family: $font;
   color: $color1;
   background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -61,8 +64,10 @@ a {
 }
 
 .technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: $color2;
-  height: 300px;
   padding: 2rem 0;
   margin-bottom: 100px;
 
@@ -73,9 +78,11 @@ a {
 
   &__logos {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 7rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1000px;
     margin-top: 3rem;
 
     img {
@@ -91,10 +98,9 @@ a {
 }
 
 .courses {
-  padding: 0 2rem;
-
-  header {
+  &__header {
     margin-bottom: 2rem;
+    padding: 0 2rem;
   }
 
   h2 {
@@ -110,21 +116,21 @@ a {
 
 .popular-courses {
   background-color: $color2;
-  padding: 2rem 2rem 3rem 2rem;
-  margin-bottom: 100px;
+  padding: 2rem;
+  margin: 2rem;
 
   h3 {
     font-family: $font-alt;
     font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
 }
 
 .active-courses {
   display: flex;
   justify-content: space-around;
-  gap: 3rem;
+  gap: 2rem;
   flex-wrap: wrap;
-  padding: 0 3rem;
 }
 
 .footer {
@@ -167,28 +173,34 @@ a {
   align-items: end;
   margin-left: auto;
 
-  span {
+  p {
     color: #fff;
     text-align: end;
   }
 }
 
 .card {
-  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 320px;
   padding: 1rem;
   border: 1px solid $color3;
   background-color: #fff;
   transition: all 0.3s ease-in-out;
 
-  header {
-    margin-bottom: 0.25rem;
+  &__header {
+    margin-top: 0.5rem;
+  }
+
+  a {
+    width: 100%;
   }
 
   img {
     height: 200px;
     object-fit: cover;
     border: 0.25rem solid $color6;
-    margin-bottom: 0.5rem;
 
     &:hover,
     &:focus {
@@ -203,10 +215,9 @@ a {
 
 .info {
   font-size: 0.9rem;
-  margin-bottom: 1rem;
 
   > * {
-    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
   }
 }
 
@@ -230,13 +241,15 @@ a {
 .card-control {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  margin-top: auto;
 }
 
 .price {
   font-size: 1.5rem;
   width: 120px;
-  text-align: center;
+  padding: 1rem 0;
 }
 
 .sale {
@@ -281,4 +294,8 @@ a {
 
 .small-text {
   font-size: 0.75rem;
+}
+
+#footer {
+  margin-top: auto;
 }

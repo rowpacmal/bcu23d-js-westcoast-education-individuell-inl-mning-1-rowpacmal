@@ -1,4 +1,6 @@
 import { createCourseCard } from '../components/card/card.js';
+import { createFooter } from '../components/footer/footer.js';
+import { createNavbar } from '../components/navbar/navbar.js';
 import { appManager } from '../lib/app.js';
 import { createElement } from '../lib/dom.js';
 
@@ -104,9 +106,8 @@ getData.forEach((data) => {
   main.appendChild(div);
   popular--;
 }); */
+const header = document.querySelector('#header');
+const main = document.querySelector('#main');
+const footer = document.querySelector('#footer');
 
-const main = document.querySelector('.active-courses');
-const courseList = await appManager.getAllCourses();
-let popular = 2;
-
-createElement.cardList(main, true, 6);
+createElement.cardList(main, true, 8);
