@@ -1,6 +1,6 @@
 import { settings } from './config.js';
 
-export const httpManager = async (resource, method = 'GET', data) => {
+export const httpClient = async (resource, method = 'GET', data) => {
   try {
     const endpoint = `${settings.BASE_URL}${resource}`;
     const options = { method: method };

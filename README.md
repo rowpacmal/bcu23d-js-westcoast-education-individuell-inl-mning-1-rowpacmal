@@ -1,7 +1,9 @@
 # WestCoast Education
+
 Vi har blivit kontaktade av WestCoast Education, som behöver vår hjälp att modernisera plattform. Vi har fått följande information av deras beställare.
 
 ## Bakgrund
+
 WestCoast Education är ett utbildningsföretag som har sinplacering på västkusten strax norr om Göteborg. Vi har varit iutbildningsbranschen i snart 40 år. Vårt affärsmål är och harvarit att tillhandahålla tekniska utbildningar inom IT-området.
 Vi har varit väldigt framgångsrika i alla år. Vi harspecialiserat oss på framförallt systemutvecklingsutbildningarinom webb och mobila lösningar.
 
@@ -14,13 +16,15 @@ Vi kommer nu att göra en stor satsning på att kunnatillhandahålla utbildninga
 Vi har beslutat att vi behöver en modern och attraktivplattform att erbjuda våra elever och kunder för bokning,sökning, matchning av kurser samt samarbete.
 
 ## Mål
+
 Vad vi behöver är en plattform som kan hantera vårttraditionella sätt att erbjuda utbildning på men som även kanhantera vårt nästa steg som är att tillhandahålla köp avinspelade kurser och seminarier för visning i webbläsare,mobila enheter samt för nedladdning.Så vi ser följande scenarier som systemet måste klara.
 
 ## Klassrumskurser
+
 Visning och listning av kurser som kommer att köras på dettraditionella viset. Det vill säga i klassrum eller på distanssom är lärarledda. Det skall gå att visa detaljer för kursernasom till exempel innehåll, längden på kursen, vem som ärlärare samt genomsnittligt betyg som kursen fått av elever.
 
 Detta innebär att vi kommer att behöva kunna lägga tillkurser, matcha lärare till rätt kurs. Vi behöver ävenmöjlighet att ta bort kurser samt ändra kursers scheman.
-Vi behöver även kunna lägga till nya lärare vid behov isystemet.Vi behöver dessutom även möjlighet att kunna administreraelever i systemet. Vi vill ha möjlighet att kunna 
+Vi behöver även kunna lägga till nya lärare vid behov isystemet.Vi behöver dessutom även möjlighet att kunna administreraelever i systemet. Vi vill ha möjlighet att kunna
 2kommuniceramed elever via e-post och via chatt. Även lärare behövermöjlighet att kunna kommunicera med elever via e-post ochchatt.
 
 Elever skall kunna följa sin status i verktyget och även kunnafå rekommendationer på nästa steg i sin utveckling. Som tillexempel rekommendationer på andra kurser som andra valt somhar gått samma utbildningsspår.
@@ -28,6 +32,7 @@ Elever skall kunna följa sin status i verktyget och även kunnafå rekommendati
 För varje kurs så skall det finnas möjlighet för elever attkunna ställa frågor till sin lärare via verktyget.
 
 ## Bokning av klassrumskurser
+
 För att kunna boka en kurs via verktyget måste man ha ettanvändarkonto. Så ett sätt för att registrera sig och logga inmåste skapas.
 
 När en elev har bokat en kurs så behöver vi kunna skicka ettbekräftelsemejl med betalningsuppgifter och ettvälkomstmeddelande. Dessutom så måste vi kunna skicka ettstartmejl senast två veckor före kursstart.
@@ -39,6 +44,7 @@ Skulle det vara så att 3 veckor före kursstart vi inte harfler än 5 deltagare
 Läraren måste även informeras om att kursen är inställd, dettamåste ske senast 2 veckor innan kursstart. Annars blir viersättningsskyldiga och måste betala läraren sitt arvode.
 
 ## On-Demand kurser
+
 Vårt nästa steg är att kunna tillhandahålla on-demand kurser,det vill säga färdiginspelade kurser som elever skall kunnaköpa till ett överkomligt pris. Vi kommer även atttillhandahålla prenumerationsmöjlighet till kurserna. Vilketinnebär att vi kommer till en låg månadskostnad låta elevereller andra kunder få tillgång till alla kurser som finns sominspelade.
 
 Här vill vi på samma sätt som ovan ha en listning av kursersom är grupperade i olika utvecklingsområden. Det skall ävenhär gå att titta på detaljer om kursen, men här vill vi hamöjlighet att kunna förhandsvisa utvalda delar av kursen föratt locka till köp eller prenumeration.
@@ -48,9 +54,12 @@ Det viktiga här är att om eleven/kunden köper en kurs i tagetså behöver vi 
 3med hjälp av e-postutskick.
 
 ## Steg 1.
+
 ### Framtagning av ”Proof Of Concept”
-I detta första steg behöver vi applikation som presenterar våra kurser på ett attraktivtoch modernt sätt.oss, där besökare kan få en överblick över vad vi kan erbjuda. Vi vill dessutom ha en sida där aktuella och populära kurser presenteras.
+
+I detta första steg behöver vi applikation som presenterar våra kurser på ett attraktivt och modernt sätt. Oss, där besökare kan få en överblick över vad vi kan erbjuda. Vi vill dessutom ha en sida där aktuella och populära kurser presenteras.
 På sidan som presenterar detaljer om kursen vill vi att följande information finns:
+
 - Kurstitel
 - Kursnummer
 - Antal dagar som kursen är
@@ -60,23 +69,29 @@ På sidan som presenterar detaljer om kursen vill vi att följande information f
 - En möjlighet att boka sig för kursen via klassrum eller distans
 
 Vid bokning av en kurs så måste användaren/kunden logga in eller skapa ett konto. På bokningssidan ska följande information anges:
+
 - Kundnamn
 - Faktureringsadress
 - E-postadress
 - Mobilnummer
 
 ## Steg 2.
+
 ### Administrationsverktyg
+
 Vi behöver en applikation som ger oss tillgång till att lägga till nya kurser. När vi lägger till nya kurser så behöver vi ange följande information:
+
 - Kurstitel
 - Kursnummer
 - Antal dagar som kursen är
 - Kostnad för kursen
 
-Dessutom behöver vi tillgång till attkunnalista vilka kundersom har bokat sig på respektive kurs.
+Dessutom behöver vi tillgång till att kunna lista vilka kundersom har bokat sig på respektive kurs.
 
 ## Funktionskrav
+
 Vi vill att applikationen skall fungera i alla moderna webbläsare och gå att använda i olika skärmstorlekar och i olika enheter. Det är jätteviktigt att applikationen är responsiv, vår gamla applikation var inte detta och vi fick väldigt mycket kritik för detta.
 
 ## Designkrav
+
 Gällande design och utseende har vi inte speciella krav förutom att applikationen skall vara lätt att orientera sig i. Det vill säga att den skall vara lätt att förstå så man hittar de väsentliga sakerna enkelt.Givetvis behöver den vara tilltalandeatt arbeta med det vill säga att den ska innehålla modern HTML och CSS.

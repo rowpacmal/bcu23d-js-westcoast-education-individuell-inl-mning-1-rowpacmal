@@ -4,6 +4,7 @@ export const createFooter = () => {
 
   div.innerHTML = `
   <div class="links">
+  <!--
     <ul>
       <li><a href="#">Business</a></li>
 
@@ -39,10 +40,11 @@ export const createFooter = () => {
 
       <li><a href="#">Accessibility statement</a></li>
     </ul>
+  -->
 
     <div class="copy">
       <a
-        href="#"
+        href="/"
         class="logo"
       >
         <img
