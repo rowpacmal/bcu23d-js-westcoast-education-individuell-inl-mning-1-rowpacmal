@@ -1,29 +1,30 @@
-import { appManager } from '../../lib/app.js';
+import { appManager } from '../lib/app.js';
 
-export const createCoursePost = async (data) => {
-  const article = document.createElement('article');
-  article.setAttribute('data-id', `${data.id}`);
+export const createCourseCard = async (data) => {
+  const div = document.createElement('div');
+  div.classList.add('card');
+  div.setAttribute('data-id', `${data.id}`);
 
   const instructor = await appManager.get('teachers', data.instructor);
 
-  article.innerHTML = `
-  <div>
+  div.innerHTML = `
+  <a href="/pages/course.html?id=${data.id}">
     <img
       src="/assets/images/courses/${data.coverImage}"
       alt="${data.altText}"
       width="2400"
       height="1600"
     />
-  </div>
+  </a>
 
   <header>
     <span>
       (${data.courseNo})
     </span>
 
-    <h1>
+    <h4>
       ${data.title}
-    </h1>
+    </h4>
   </header>
 
   <div>
@@ -91,53 +92,13 @@ export const createCoursePost = async (data) => {
       </span>
     </div>
 
-    <p>
-      (The enrollment fee must be paid in full before the start of the semester)
-    </p>
-
     <div>
-      <a href="/">
-        <i class="bi-caret-left-fill"></i>
-
-        <span>
-          Go Back
-        </span>
+      <a href="/pages/course.html?id=${data.id}">
+        Details
       </a>
-
-      <button type="button">
-        Enroll
-      </button>
     </div>
   </div>
-
-  <section>
-    <h2>
-      About this course
-    </h2>
-
-    <section>
-      <h3>
-        Introduction
-      </h3>
-
-      <p>
-        ${data.shortDescription}
-      </p>
-    </section>
-
-    <section>
-      <h3>
-        <q>
-          ${data.courseSlogan}
-        </q>
-      </h3>
-
-      <p>
-        ${data.longDescription}
-      </p>
-    </section>
-  </section>
   `;
 
-  return article;
+  return div;
 };
