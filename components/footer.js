@@ -48,8 +48,8 @@ export const createFooter = () => {
         class="logo"
       >
         <img
-          src="/assets/images/svg-edited.svg"
-          alt=""
+          src="/assets/images/logo.svg"
+          alt="WestCoast Education Logo"
           class="westcoast-logo"
           width="600"
           height="400"

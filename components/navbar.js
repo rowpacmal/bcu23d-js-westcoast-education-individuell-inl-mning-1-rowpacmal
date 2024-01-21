@@ -6,7 +6,7 @@ export const createNavbar = () => {
 
   const img = document.createElement('img');
   const imgAttributes = [
-    { name: 'src', value: '/assets/images/svg-edited.svg' },
+    { name: 'src', value: '/assets/images/logo.svg' },
     { name: 'alt', value: 'WestCoast Education Logo' },
     { name: 'width', value: 600 },
     { name: 'height', value: 400 },
@@ -43,7 +43,7 @@ export const createNavbar = () => {
     },
     {
       name: 'Profile',
-      href: `/pages/auth/user.html?id=${key}`,
+      href: `/pages/user.html?id=${key}`,
     },
     {
       name: 'Sign Out',

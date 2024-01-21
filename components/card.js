@@ -1,4 +1,4 @@
-import { appManager } from '../lib/app.js';
+import { appManager } from '/lib/app.js';
 
 export const createCourseCard = async (data) => {
   const div = document.createElement('div');
@@ -8,7 +8,7 @@ export const createCourseCard = async (data) => {
   const instructor = await appManager.get('teachers', data.instructor);
 
   div.innerHTML = `
-  <a href="/pages/course.html?id=${data.id}">
+  <a href="/pages/course-details.html?id=${data.id}">
     <img
       src="/assets/images/courses/${data.coverImage}"
       alt="${data.altText}"
@@ -93,7 +93,7 @@ export const createCourseCard = async (data) => {
     </div>
 
     <div>
-      <a href="/pages/course.html?id=${data.id}">
+      <a href="/pages/course-details.html?id=${data.id}">
         Details
       </a>
     </div>

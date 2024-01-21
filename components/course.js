@@ -1,4 +1,4 @@
-import { appManager } from '../lib/app.js';
+import { appManager } from '/lib/app.js';
 
 export const createCoursePost = async (data) => {
   const article = document.createElement('article');
