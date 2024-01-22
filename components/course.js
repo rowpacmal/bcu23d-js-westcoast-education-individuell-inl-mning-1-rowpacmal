@@ -104,7 +104,7 @@ export const createCoursePost = async (data) => {
         </span>
       </a>
 
-      <button type="button">
+      <button type="button" id="enroll">
         Enroll
       </button>
     </div>
