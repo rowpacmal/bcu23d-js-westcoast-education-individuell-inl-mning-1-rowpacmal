@@ -2,7 +2,7 @@ import { appManager } from '/lib/app.js';
 
 export const createCoursePost = async (data) => {
   const article = document.createElement('article');
-  article.setAttribute('data-id', `${data.id}`);
+  article.setAttribute('data-id', data.id);
 
   const instructor = await appManager.getTeacher(data.instructor);
 

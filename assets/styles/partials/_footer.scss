@@ -1,0 +1,29 @@
+.footer {
+  margin-top: 100px;
+  background-color: $color1;
+  padding: 2rem;
+  box-shadow: 0 -15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  margin-left: auto;
+
+  p {
+    color: $white;
+    text-align: end;
+  }
+}
+
+@media (max-width: 375px) {
+  .copy {
+    align-items: center;
+
+    p {
+      text-align: center;
+    }
+  }
+}

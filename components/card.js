@@ -2,7 +2,7 @@ import { appManager } from '/lib/app.js';
 
 export const createCourseCard = async (data) => {
   const div = document.createElement('div');
-  div.setAttribute('data-id', `${data.id}`);
+  div.setAttribute('data-id', data.id);
 
   const instructor = await appManager.getTeacher(data.instructor);
 

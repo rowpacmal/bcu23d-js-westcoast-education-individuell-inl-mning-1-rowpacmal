@@ -1,10 +1,13 @@
 export const createNavbar = () => {
-  const div = document.createElement('div');
+  const container = document.createElement('div');
+  container.classList.add('navbar');
 
   const logo = document.createElement('a');
+  logo.classList.add('logo');
   logo.setAttribute('href', '/');
 
   const img = document.createElement('img');
+  img.classList.add('logo-img');
   const imgAttributes = [
     { name: 'src', value: '/assets/images/logo.svg' },
     { name: 'alt', value: 'WestCoast Education Logo' },
@@ -17,7 +20,7 @@ export const createNavbar = () => {
   });
 
   logo.appendChild(img);
-  div.appendChild(logo);
+  container.appendChild(logo);
 
   const key = localStorage.getItem('weCacheKey');
   const links = [
@@ -55,44 +58,65 @@ export const createNavbar = () => {
     },
   ];
 
-  const ul = createLinkList(links.slice(0, 3));
-  div.appendChild(ul);
+  const checkbox = document.createElement('input');
+  checkbox.classList.add('toggle-menu');
+  checkbox.setAttribute('type', 'checkbox');
+
+  container.appendChild(checkbox);
+
+  const hamburger = document.createElement('div');
+  hamburger.classList.add('hamburger');
+
+  container.appendChild(hamburger);
+
+  const menu = document.createElement('div');
+  menu.classList.add('menu');
+
+  const list = createLinkList(links.slice(0, 3));
+
+  menu.appendChild(list);
 
   if (key === 'admin') {
     const admin = links.slice(5);
     admin.reverse().splice(2, 1);
 
-    const ul = createLinkList(admin);
+    const list = createLinkList(admin);
 
-    div.appendChild(ul);
+    menu.appendChild(list);
   } else if (key) {
     const user = links.slice(5);
     user.splice(2, 1);
 
-    const ul = createLinkList(user);
+    const list = createLinkList(user);
 
-    div.appendChild(ul);
+    menu.appendChild(list);
   } else {
-    const ul = createLinkList(links.slice(3).splice(0, 2));
+    const list = createLinkList(links.slice(3).splice(0, 2));
 
-    div.appendChild(ul);
+    menu.appendChild(list);
   }
 
-  return div;
+  container.appendChild(menu);
+
+  return container;
 };
 
 const createLinkList = (links) => {
-  const ul = document.createElement('ul');
+  const list = document.createElement('ul');
+  list.classList.add('list');
 
   links.forEach((link) => {
     const li = document.createElement('li');
+    li.classList.add('list-item');
+
     const a = document.createElement('a');
+    a.classList.add('list-link');
     a.setAttribute('href', link.href);
     a.appendChild(document.createTextNode(link.name));
 
     li.appendChild(a);
-    ul.appendChild(li);
+    list.appendChild(li);
   });
 
-  return ul;
+  return list;
 };

@@ -1,0 +1,32 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.btn {
+  color: $color1;
+  background-color: $color3;
+  border: none;
+  min-height: 1rem;
+  min-width: 5rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: $transition-fast;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $color6;
+    scale: 1.1;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+
+  &:active {
+    background-color: $color4;
+    scale: 1;
+  }
+}
