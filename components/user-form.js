@@ -110,14 +110,6 @@ export const createStudentForm = () => {
     </div>
 
     <div>
-      <a href="/">
-        <i class="bi-caret-left-fill"></i>
-
-        <span>
-          Go Back
-        </span>
-      </a>
-
       <button type="submit">
         Sign Up
       </button>

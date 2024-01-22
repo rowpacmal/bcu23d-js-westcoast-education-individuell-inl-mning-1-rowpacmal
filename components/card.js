@@ -2,10 +2,9 @@ import { appManager } from '/lib/app.js';
 
 export const createCourseCard = async (data) => {
   const div = document.createElement('div');
-  div.classList.add('card');
   div.setAttribute('data-id', `${data.id}`);
 
-  const instructor = await appManager.get('teachers', data.instructor);
+  const instructor = await appManager.getTeacher(data.instructor);
 
   div.innerHTML = `
   <a href="/pages/course-details.html?id=${data.id}">

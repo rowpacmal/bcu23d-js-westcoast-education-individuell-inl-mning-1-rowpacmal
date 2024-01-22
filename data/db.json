@@ -17,7 +17,7 @@
       "enrollmentFee": 49.99,
       "coverImage": "joan-gamell-XmZ4GDAp9G0-unsplash_2400x1600.webp",
       "altText": "The Complete Master Course: React and Beyond",
-      "participants": []
+      "participants": ["2655", "122f"]
     },
     {
       "id": "91f7",
@@ -55,9 +55,7 @@
       "enrollmentFee": 19.99,
       "coverImage": "mohammad-rahmani-8qEB0fTe9Vw-unsplash_2400x1600.webp",
       "altText": "The Complete JavaScript Course for Beginners",
-      "participants": [
-        "urgf"
-      ]
+      "participants": ["urgf", "2655", "ff96", "9dfb"]
     },
     {
       "id": "f117",
@@ -114,7 +112,7 @@
       "enrollmentFee": 19.99,
       "coverImage": "gabriel-heinzer-g5jpH62pwes-unsplash_2400x1800.webp",
       "altText": "Node.js for Beginners",
-      "participants": []
+      "participants": ["2655"]
     }
   ],
   "students": [
@@ -127,9 +125,7 @@
       "address": "Street 12",
       "postNo": "12345",
       "phone": "+46123456789",
-      "enrolledCourses": [
-        "710f"
-      ]
+      "enrolledCourses": ["710f"]
     },
     {
       "id": "2655",
@@ -140,7 +136,7 @@
       "address": "Street 34",
       "postNo": "55678",
       "phone": "+46912654879",
-      "enrolledCourses": []
+      "enrolledCourses": ["7623", "710f", "7cc1"]
     },
     {
       "id": "4ef0",
@@ -185,6 +181,83 @@
       "postNo": 99654,
       "phone": "+66069845518",
       "enrolledCourses": []
+    },
+    {
+      "id": "d151",
+      "firstName": "Toto",
+      "lastName": "Soso",
+      "email": "toto.soso@yoyo.io",
+      "password": "4321",
+      "address": "Lala St. 88",
+      "postNo": 56565,
+      "phone": "+46912654879",
+      "enrolledCourses": []
+    },
+    {
+      "id": "688c",
+      "firstName": "Fofo",
+      "lastName": "Koko",
+      "email": "fofo.koko@xoxo.vo",
+      "password": "qwer",
+      "address": "Fafa St. 99",
+      "postNo": 998,
+      "phone": "+12708546691",
+      "enrolledCourses": []
+    },
+    {
+      "id": "b9cb",
+      "firstName": "Lady",
+      "lastName": "Gaga",
+      "email": "lady.gaga@pop.star",
+      "password": "1234",
+      "address": "Crazy St. 66",
+      "postNo": 56595,
+      "phone": "+46912654879",
+      "enrolledCourses": []
+    },
+    {
+      "id": "ff96",
+      "firstName": "Malin",
+      "lastName": "Rödström",
+      "email": "malin.rödström@mail.me",
+      "password": "1234",
+      "address": "Malin Gatan 1",
+      "postNo": 88921,
+      "phone": "+46912654879",
+      "enrolledCourses": ["710f"]
+    },
+    {
+      "id": "1087",
+      "firstName": "Joakim ",
+      "lastName": "Högdal",
+      "email": "joa.hog@kim.dal",
+      "password": "joak1m",
+      "address": "Fru Gatan 12",
+      "postNo": 11225,
+      "phone": "+46912654879",
+      "enrolledCourses": []
+    },
+    {
+      "id": "9dfb",
+      "firstName": "Dröm",
+      "lastName": "Mannen",
+      "email": "drom@mann.en",
+      "password": "drommannen",
+      "address": "Sleep St. 13",
+      "postNo": 89521,
+      "phone": "+46912654879",
+      "enrolledCourses": ["710f"]
+    },
+    {
+      "id": "122f",
+      "firstName": "Lisa",
+      "lastName": "Liten",
+      "email": "lisa@lit.en",
+      "password": "l1sa",
+      "address": "Lilla Gatan 22",
+      "postNo": 99887,
+      "phone": "+46912654879",
+      "enrolledCourses": ["7623"]
     }
   ],
   "teachers": [

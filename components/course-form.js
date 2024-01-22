@@ -1,6 +1,5 @@
 export const createCourseForm = () => {
   const form = document.createElement('form');
-  form.classList.add('form');
 
   form.innerHTML = `
   <div>

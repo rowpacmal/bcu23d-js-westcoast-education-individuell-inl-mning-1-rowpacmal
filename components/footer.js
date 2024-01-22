@@ -1,6 +1,5 @@
 export const createFooter = () => {
   const div = document.createElement('div');
-  div.classList.add('footer');
 
   div.innerHTML = `
   <div class="links">

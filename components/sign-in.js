@@ -35,14 +35,6 @@ export const createSignIn = () => {
     </div>
 
     <div>
-      <a href="/">
-        <i class="bi-caret-left-fill"></i>
-
-        <span>
-          Go Back
-        </span>
-      </a>
-    
       <button type="submit">
         Sign In
       </button>

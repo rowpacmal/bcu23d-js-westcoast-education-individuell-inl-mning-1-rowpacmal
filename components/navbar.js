@@ -51,7 +51,7 @@ export const createNavbar = () => {
     },
     {
       name: 'Admin',
-      href: '/pages/auth/admin/edit.html',
+      href: '/pages/admin/admin.html',
     },
   ];
 

@@ -4,7 +4,7 @@ export const createCoursePost = async (data) => {
   const article = document.createElement('article');
   article.setAttribute('data-id', `${data.id}`);
 
-  const instructor = await appManager.get('teachers', data.instructor);
+  const instructor = await appManager.getTeacher(data.instructor);
 
   article.innerHTML = `
   <div>
@@ -96,14 +96,6 @@ export const createCoursePost = async (data) => {
     </p>
 
     <div>
-      <a href="/">
-        <i class="bi-caret-left-fill"></i>
-
-        <span>
-          Go Back
-        </span>
-      </a>
-
       <button type="button" id="enroll">
         Enroll
       </button>
