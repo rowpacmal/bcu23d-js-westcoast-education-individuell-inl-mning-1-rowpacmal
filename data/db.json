@@ -17,11 +17,7 @@
       "enrollmentFee": 49.99,
       "coverImage": "joan-gamell-XmZ4GDAp9G0-unsplash_2400x1600.webp",
       "altText": "The Complete Master Course: React and Beyond",
-      "participants": [
-        "2655",
-        "122f",
-        "urgf"
-      ]
+      "participants": ["2655", "122f", "urgf"]
     },
     {
       "id": "91f7",
@@ -59,12 +55,7 @@
       "enrollmentFee": 19.99,
       "coverImage": "mohammad-rahmani-8qEB0fTe9Vw-unsplash_2400x1600.webp",
       "altText": "The Complete JavaScript Course for Beginners",
-      "participants": [
-        "urgf",
-        "2655",
-        "ff96",
-        "9dfb"
-      ]
+      "participants": ["urgf", "2655", "ff96", "9dfb"]
     },
     {
       "id": "f117",
@@ -121,12 +112,16 @@
       "enrollmentFee": 19.99,
       "coverImage": "gabriel-heinzer-g5jpH62pwes-unsplash_2400x1800.webp",
       "altText": "Node.js for Beginners",
-      "participants": [
-        "2655"
-      ]
+      "participants": ["2655"]
     }
   ],
   "students": [
+    {
+      "devNote": "Added admin here to make it easier for me while I work, may crteate a seperate endpoint for the admin if this wasn't a DEMO",
+      "id": "admin",
+      "email": "admin@admin.we",
+      "password": "admin"
+    },
     {
       "id": "urgf",
       "firstName": "Claire",
@@ -136,10 +131,7 @@
       "address": "Street 12",
       "postNo": "12345",
       "phone": "+46123456789",
-      "enrolledCourses": [
-        "710f",
-        "7623"
-      ]
+      "enrolledCourses": ["710f", "7623"]
     },
     {
       "id": "2655",
@@ -150,11 +142,7 @@
       "address": "Street 34",
       "postNo": "55678",
       "phone": "+46912654879",
-      "enrolledCourses": [
-        "7623",
-        "710f",
-        "7cc1"
-      ]
+      "enrolledCourses": ["7623", "710f", "7cc1"]
     },
     {
       "id": "4ef0",
@@ -242,9 +230,7 @@
       "address": "Malin Gatan 1",
       "postNo": 88921,
       "phone": "+46912654879",
-      "enrolledCourses": [
-        "710f"
-      ]
+      "enrolledCourses": ["710f"]
     },
     {
       "id": "1087",
@@ -266,9 +252,7 @@
       "address": "Sleep St. 13",
       "postNo": 89521,
       "phone": "+46912654879",
-      "enrolledCourses": [
-        "710f"
-      ]
+      "enrolledCourses": ["710f"]
     },
     {
       "id": "122f",
@@ -279,9 +263,7 @@
       "address": "Lilla Gatan 22",
       "postNo": 99887,
       "phone": "+46912654879",
-      "enrolledCourses": [
-        "7623"
-      ]
+      "enrolledCourses": ["7623"]
     }
   ],
   "teachers": [

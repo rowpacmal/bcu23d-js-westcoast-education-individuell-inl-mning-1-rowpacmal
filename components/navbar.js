@@ -23,7 +23,7 @@ export const createNavbar = () => {
   logo.appendChild(img);
   container.appendChild(logo);
 
-  const key = localStorage.getItem('weCacheKey');
+  const key = localStorage.getItem('weLoginKey');
   const links = [
     {
       name: 'Catalog',

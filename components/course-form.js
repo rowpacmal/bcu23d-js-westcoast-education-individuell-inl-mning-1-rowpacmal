@@ -291,6 +291,12 @@ export const createCourseForm = () => {
     </div>
 
     <div>
+      <a href="/pages/admin/admin.html">
+        <i class="bi-caret-left-fill"></i>
+
+        <span> Go Back </span>
+      </a>
+
       <button type="submit">
         Post
       </button>
