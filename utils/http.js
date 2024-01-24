@@ -1,4 +1,4 @@
-import { settings } from '/utils/config.js';
+import { settings } from './config.js';
 
 export const httpClient = async (resource, method = 'GET', data) => {
   try {
