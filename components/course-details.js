@@ -2,6 +2,7 @@ import { appManager } from '/lib/appManager.js';
 
 export const createCourseDetails = async (data) => {
   const article = document.createElement('article');
+  article.classList.add('course-details');
   article.setAttribute('data-id', data.id);
 
   const instructor = await appManager.getTeacher(data.instructor);
@@ -43,7 +44,7 @@ export const createCourseDetails = async (data) => {
     </div>
 
     <div>
-      <span>
+      <span class="bold">
         Starts
       </span>
 
@@ -96,8 +97,8 @@ export const createCourseDetails = async (data) => {
       (The enrollment fee must be paid in full before the start of the semester)
     </p>
 
-    <div>
-      <button type="button" id="enroll">
+    <div class="buttons">
+      <button type="button" class="btn" id="enroll">
         Enroll
       </button>
     </div>

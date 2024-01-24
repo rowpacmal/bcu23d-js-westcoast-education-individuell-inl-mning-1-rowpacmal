@@ -1,8 +1,8 @@
 export const createHome = () => {
-  const div = document.createElement('div');
+  const section = document.createElement('section');
+  section.classList.add('home');
 
-  div.innerHTML = `
-  <section >
+  section.innerHTML = `
     <header>
       <h2>
         A broad selection of courses
@@ -12,8 +12,7 @@ export const createHome = () => {
     <p>
       Choose from over 100 classroom, remote and on-demand courses with new additions published every year
     </p>
-  </section>
   `;
 
-  return div;
+  return section;
 };

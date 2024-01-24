@@ -1,12 +1,13 @@
 import { appManager } from '/lib/appManager.js';
 
 export const createCourseCard = async (data) => {
-  const div = document.createElement('div');
-  div.setAttribute('data-id', data.id);
+  const card = document.createElement('div');
+  card.classList.add('card');
+  card.setAttribute('data-id', data.id);
 
   const instructor = await appManager.getTeacher(data.instructor);
 
-  div.innerHTML = `
+  card.innerHTML = `
   <a href="/pages/course-details.html?id=${data.id}">
     <img
       src="/assets/images/courses/${data.coverImage}"
@@ -18,7 +19,7 @@ export const createCourseCard = async (data) => {
   </a>
 
   <header>
-    <span>
+    <span class="small-text">
       (${data.courseNo})
     </span>
 
@@ -43,7 +44,7 @@ export const createCourseCard = async (data) => {
     </div>
 
     <div>
-      <span>
+      <span class="bold">
         Starts
       </span>
 
@@ -52,7 +53,7 @@ export const createCourseCard = async (data) => {
       </span>
     </div>
 
-    <div>
+    <div class="small-text">
       <span>
         ${data.courseLength} Days
       </span>
@@ -84,21 +85,21 @@ export const createCourseCard = async (data) => {
   </div>
 
   <div>
-    <div>
-      <i class="bi-currency-euro"></i>
+    <i class="bi-currency-euro"></i>
 
-      <span>
-        ${data.enrollmentFee}
-      </span>
-    </div>
+    <span>
+      ${data.enrollmentFee}
+    </span>
+  </div>
 
-    <div>
-      <a href="/pages/course-details.html?id=${data.id}">
-        Details
-      </a>
-    </div>
+  <hr />
+
+  <div>
+    <a href="/pages/course-details.html?id=${data.id}">
+      More details
+    </a>
   </div>
   `;
 
-  return div;
+  return card;
 };

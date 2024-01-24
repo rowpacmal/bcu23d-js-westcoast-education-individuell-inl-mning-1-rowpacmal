@@ -34,3 +34,22 @@ img {
   width: 100%;
   height: auto;
 }
+
+hr {
+  border-top: 1px solid $color3;
+}
+
+.small-text {
+  font-size: 0.75rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@media (min-width: 2000px) {
+  body {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
