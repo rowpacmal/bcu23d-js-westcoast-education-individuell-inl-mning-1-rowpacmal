@@ -1,4 +1,4 @@
-import { appManager } from '/lib/app.js';
+import { appManager } from '/lib/appManager.js';
 
 export const convertFormData = (form) => {
   const formData = new FormData(form);

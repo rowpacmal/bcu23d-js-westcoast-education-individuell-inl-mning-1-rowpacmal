@@ -8,14 +8,14 @@ export const createSignIn = () => {
 
   <form id="signInForm">
     <div>
-      <label for="username">
-        Username:
+      <label for="email">
+        Email:
       </label>
 
       <input
         type="email"
-        name="username"
-        id="username"
+        name="email"
+        id="email"
         placeholder="example@mail.io"
         required
       />

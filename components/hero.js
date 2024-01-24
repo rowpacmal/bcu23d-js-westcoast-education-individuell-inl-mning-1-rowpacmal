@@ -1,16 +1,8 @@
 export const createHero = () => {
   const div = document.createElement('div');
+  div.classList.add('hero');
 
   div.innerHTML = `
-  <figure>
-    <img
-      src="/assets/images/resources/marvin-meyer-SYTO3xs06fU-unsplash_2400x1600.webp"
-      alt=""
-      width="2400"
-      height="1600"
-    />
-  </figure>
-
   <section>
     <header>
       <h1>

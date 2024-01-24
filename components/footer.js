@@ -16,6 +16,7 @@ export const createFooter = () => {
           class="logo-img"
           width="600"
           height="400"
+          loading="lazy"
         />
       </a>
 

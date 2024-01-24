@@ -1,4 +1,4 @@
-import { appManager } from '/lib/app.js';
+import { appManager } from '/lib/appManager.js';
 
 export const createCourseCard = async (data) => {
   const div = document.createElement('div');
@@ -13,6 +13,7 @@ export const createCourseCard = async (data) => {
       alt="${data.altText}"
       width="2400"
       height="1600"
+      loading="lazy"
     />
   </a>
 

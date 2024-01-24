@@ -1,6 +1,6 @@
-import { appManager } from '/lib/app.js';
+import { appManager } from '/lib/appManager.js';
 
-export const createCoursePost = async (data) => {
+export const createCourseDetails = async (data) => {
   const article = document.createElement('article');
   article.setAttribute('data-id', data.id);
 
@@ -13,6 +13,7 @@ export const createCoursePost = async (data) => {
       alt="${data.altText}"
       width="2400"
       height="1600"
+      loading="lazy"
     />
   </div>
 

@@ -13,6 +13,7 @@ export const createNavbar = () => {
     { name: 'alt', value: 'WestCoast Education Logo' },
     { name: 'width', value: 600 },
     { name: 'height', value: 400 },
+    { name: 'loading', value: 'lazy' },
   ];
 
   imgAttributes.forEach((attribute) => {
