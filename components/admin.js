@@ -1,24 +1,30 @@
-import { appManager } from '/lib/appManager.js';
+import { appManager } from '../lib/appManager.js';
 
 export const createAdminOverview = () => {
   const section = document.createElement('section');
-  const h2 = document.createElement('h2');
+  section.classList.add('admin');
 
+  const h2 = document.createElement('h2');
   h2.appendChild(document.createTextNode('Admin Overview'));
+
   section.appendChild(h2);
 
   const overview = document.createElement('div');
-
+  overview.classList.add('overview');
   createCourseOverview(overview);
+
   section.appendChild(overview);
 
-  const addCourse = document.createElement('div');
-  const link = document.createElement('a');
-  link.setAttribute('href', '/pages/admin/create-course.html');
+  const buttonContainer = document.createElement('div');
+  buttonContainer.classList.add('buttons');
 
+  const link = document.createElement('a');
+  link.classList.add('btn-link');
+  link.setAttribute('href', '/pages/admin/create-course.html');
   link.appendChild(document.createTextNode('Add new course'));
-  addCourse.appendChild(link);
-  section.appendChild(addCourse);
+
+  buttonContainer.appendChild(link);
+  section.appendChild(buttonContainer);
 
   return section;
 };
@@ -28,47 +34,82 @@ const createCourseOverview = async (parent) => {
 
   courses.forEach((course) => {
     const container = document.createElement('div');
-    const title = document.createElement('h3');
+    container.setAttribute('data-id', course.id);
 
+    const title = document.createElement('h3');
     title.appendChild(document.createTextNode(course.title));
     container.appendChild(title);
 
     const label = document.createElement('h4');
-    label.appendChild(document.createTextNode('Students Enrolled'));
+    const labelString = `Students Enrolled (${course.participants.length})`;
+    label.appendChild(document.createTextNode(labelString));
     container.appendChild(label);
 
-    const students = document.createElement('div');
+    const table = document.createElement('table');
+    const thead = document.createElement('thead');
+    table.appendChild(thead);
+
+    const tr = document.createElement('tr');
+    thead.appendChild(tr);
+
+    const theadLabels = [
+      'ID',
+      'First Name',
+      'Last Name',
+      'Email',
+      'Address',
+      'Post No.',
+      'Phone',
+    ];
+
+    theadLabels.forEach((i) => {
+      const th = document.createElement('th');
+      th.appendChild(document.createTextNode(i));
+      tr.appendChild(th);
+    });
+
+    const tbody = document.createElement('tbody');
+    table.appendChild(tbody);
+
     const participants = course.participants;
 
     if (participants.length > 0) {
-      participants.forEach(async (student) => {
-        const user = await appManager.getStudent(student);
+      participants.forEach(async (studentId) => {
+        const student = await appManager.getStudent(studentId);
 
-        const div = document.createElement('div');
-        const info = [`(${user.id}) `, `${user.firstName} ${user.lastName}`];
+        const tr = document.createElement('tr');
+        const tbodyInfo = [
+          `(${student.id}) `,
+          student.firstName,
+          student.lastName,
+          student.email,
+          student.address,
+          student.postNo,
+          student.phone,
+        ];
 
-        info.forEach((i) => {
-          const span = document.createElement('span');
-          span.appendChild(document.createTextNode(i));
-
-          div.appendChild(span);
+        tbodyInfo.forEach((i) => {
+          const td = document.createElement('td');
+          td.appendChild(document.createTextNode(i));
+          tr.appendChild(td);
         });
 
-        students.appendChild(div);
+        tbody.appendChild(tr);
       });
     } else {
-      const div = document.createElement('div');
-      const span = document.createElement('span');
+      const tr = document.createElement('tr');
+      const td = document.createElement('td');
       const massage =
         'There are no students currently enrolled in this course...';
 
-      span.appendChild(document.createTextNode(massage));
+      td.setAttribute('colspan', 7);
+      td.appendChild(document.createTextNode(massage));
+      tr.appendChild(td);
 
-      div.appendChild(span);
-      students.appendChild(div);
+      tbody.appendChild(tr);
     }
 
-    container.appendChild(students);
+    container.appendChild(table);
     parent.appendChild(container);
   });
 };

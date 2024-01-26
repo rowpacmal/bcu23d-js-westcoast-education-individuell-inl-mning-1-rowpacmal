@@ -1,11 +1,7 @@
-import { appManager } from '/lib/appManager.js';
-
-export const createCourseDetails = async (data) => {
+export const createCourseDetails = (data) => {
   const article = document.createElement('article');
   article.classList.add('course-details');
   article.setAttribute('data-id', data.id);
-
-  const instructor = await appManager.getTeacher(data.instructor);
 
   article.innerHTML = `
   <div>
@@ -35,11 +31,7 @@ export const createCourseDetails = async (data) => {
       </span>
 
       <span>
-        ${instructor.firstName}
-      </span>
-
-      <span>
-        ${instructor.lastName}
+        ${data.instructor}
       </span>
     </div>
 

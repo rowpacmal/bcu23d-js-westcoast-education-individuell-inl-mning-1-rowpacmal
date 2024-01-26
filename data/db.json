@@ -4,7 +4,7 @@
       "id": "7623",
       "title": "The Complete Master Course: React and Beyond",
       "courseNo": 8845963329,
-      "instructor": "o92y",
+      "instructor": "John Doe",
       "courseType": "Remote",
       "shortDescription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sed facilis impedit iusto error perspiciatis, nihil aut reiciendis cumque suscipit. Voluptatibus id totam illum cupiditate sapiente earum autem, similique voluptatum.",
       "courseSlogan": "Never react without React",
@@ -17,18 +17,13 @@
       "enrollmentFee": 49.99,
       "coverImage": "joan-gamell-XmZ4GDAp9G0-unsplash_2400x1600.webp",
       "altText": "The Complete Master Course: React and Beyond",
-      "participants": [
-        "2655",
-        "122f",
-        "urgf",
-        "a5c7"
-      ]
+      "participants": ["2655", "122f", "urgf", "a5c7"]
     },
     {
       "id": "91f7",
       "title": "The Complete Full-Stack Web Developer Course",
       "courseNo": 4599611863,
-      "instructor": "erq2",
+      "instructor": "Mary Sue",
       "courseType": "Classroom",
       "shortDescription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sed facilis impedit iusto error perspiciatis, nihil aut reiciendis cumque suscipit. Voluptatibus id totam illum cupiditate sapiente earum autem, similique voluptatum.",
       "courseSlogan": "Only stack with Full-Stack",
@@ -47,7 +42,7 @@
       "id": "710f",
       "title": "The Complete JavaScript Course for Beginners",
       "courseNo": 1248896577,
-      "instructor": "870a",
+      "instructor": "Daren Karen",
       "courseType": "Classroom",
       "shortDescription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sed facilis impedit iusto error perspiciatis, nihil aut reiciendis cumque suscipit. Voluptatibus id totam illum cupiditate sapiente earum autem, similique voluptatum.",
       "courseSlogan": "Don't forget the script in JavaScript",
@@ -60,19 +55,13 @@
       "enrollmentFee": 19.99,
       "coverImage": "mohammad-rahmani-8qEB0fTe9Vw-unsplash_2400x1600.webp",
       "altText": "The Complete JavaScript Course for Beginners",
-      "participants": [
-        "urgf",
-        "2655",
-        "ff96",
-        "9dfb",
-        "a5c7"
-      ]
+      "participants": ["urgf", "2655", "ff96", "9dfb", "a5c7", "2fe9"]
     },
     {
       "id": "f117",
       "title": "The Complete Python Course",
       "courseNo": 5984479321,
-      "instructor": "4cc6",
+      "instructor": "Sally Sad",
       "courseType": "On-Demand",
       "shortDescription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sed facilis impedit iusto error perspiciatis, nihil aut reiciendis cumque suscipit. Voluptatibus id totam illum cupiditate sapiente earum autem, similique voluptatum.",
       "courseSlogan": "Is it a worm? Is it a Snake? No, it's Python!",
@@ -91,7 +80,7 @@
       "id": "5c04",
       "title": "Master Class in AI and Machine Learning",
       "courseNo": 184560023,
-      "instructor": "17i9",
+      "instructor": "Jane Doe",
       "courseType": "Classroom",
       "shortDescription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sed facilis impedit iusto error perspiciatis, nihil aut reiciendis cumque suscipit. Voluptatibus id totam illum cupiditate sapiente earum autem, similique voluptatum.",
       "courseSlogan": "Future of Intelligence, is Artificial Intelligence",
@@ -104,13 +93,13 @@
       "enrollmentFee": 49.99,
       "coverImage": "hitesh-choudhary-t1PaIbMTJIM-unsplash_2400x1340.webp",
       "altText": "Master Class in AI and Machine Learning",
-      "participants": []
+      "participants": ["urgf"]
     },
     {
       "id": "7cc1",
       "title": "Node.js for Beginners",
       "courseNo": 9300210782,
-      "instructor": "o92y",
+      "instructor": "Jerry Perry",
       "courseType": "Remote",
       "shortDescription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sed facilis impedit iusto error perspiciatis, nihil aut reiciendis cumque suscipit. Voluptatibus id totam illum cupiditate sapiente earum autem, similique voluptatum.",
       "courseSlogan": "Bring the Node back with style!",
@@ -123,9 +112,26 @@
       "enrollmentFee": 19.99,
       "coverImage": "gabriel-heinzer-g5jpH62pwes-unsplash_2400x1800.webp",
       "altText": "Node.js for Beginners",
-      "participants": [
-        "2655"
-      ]
+      "participants": ["2655", "urgf", "2fe9"]
+    },
+    {
+      "id": "a832",
+      "title": "Web Development Wizardry: Crafting Dynamic and Responsive Websites",
+      "courseNo": 9654128740,
+      "instructor": "Jack Pack",
+      "courseType": "Hybrid",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod justo nec tellus tincidunt, vel tincidunt elit commodo. Fusce vehicula velit nec sem facilisis, et suscipit augue ullamcorper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+      "courseSlogan": "Unlock the Digital Realm",
+      "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac ex ut dolor ultricies vestibulum. Nullam tristique eros id dolor accumsan, vel ullamcorper tortor tristique. Integer efficitur malesuada tellus, nec scelerisque sapien pellentesque eu. Maecenas eget dictum elit. Sed eleifend, justo nec bibendum tristique, nisl nulla tincidunt orci, id tincidunt odio lacus vel arcu. Curabitur vel eleifend ex. Sed consectetur, felis eu tincidunt rhoncus, dui felis accumsan justo, vel fermentum metus libero at est. Suspendisse potenti. Vivamus sagittis justo et nisi cursus, vel hendrerit odio bibendum. Integer nec diam quam. Sed eu tincidunt ex. In hac habitasse platea dictumst. Nullam ultricies diam ut mi congue, id convallis sem feugiat. Nunc id leo ut purus facilisis eleifend. Vivamus aliquet, velit vitae fringilla egestas, dolor odio facilisis libero, a hendrerit lacus risus non justo.",
+      "courseStart": "2024-04-22",
+      "courseLength": 40,
+      "level": "All Levels",
+      "rating": 471,
+      "score": 7.4,
+      "enrollmentFee": 29.99,
+      "coverImage": "arian-darvishi-wh-RPfR_3_M-unsplash_2400x1600.webp",
+      "altText": "Web Development Wizardry: Crafting Dynamic and Responsive Websites",
+      "participants": ["urgf", "24d0"]
     }
   ],
   "students": [
@@ -144,10 +150,7 @@
       "address": "Street 12",
       "postNo": "12345",
       "phone": "+46123456789",
-      "enrolledCourses": [
-        "710f",
-        "7623"
-      ]
+      "enrolledCourses": ["710f", "7623", "5c04", "7cc1", "a832"]
     },
     {
       "id": "2655",
@@ -158,11 +161,7 @@
       "address": "Street 34",
       "postNo": "55678",
       "phone": "+46912654879",
-      "enrolledCourses": [
-        "7623",
-        "710f",
-        "7cc1"
-      ]
+      "enrolledCourses": ["7623", "710f", "7cc1"]
     },
     {
       "id": "4ef0",
@@ -250,9 +249,7 @@
       "address": "Malin Gatan 1",
       "postNo": 88921,
       "phone": "+46912654879",
-      "enrolledCourses": [
-        "710f"
-      ]
+      "enrolledCourses": ["710f"]
     },
     {
       "id": "1087",
@@ -274,9 +271,7 @@
       "address": "Sleep St. 13",
       "postNo": 89521,
       "phone": "+46912654879",
-      "enrolledCourses": [
-        "710f"
-      ]
+      "enrolledCourses": ["710f"]
     },
     {
       "id": "122f",
@@ -287,9 +282,7 @@
       "address": "Lilla Gatan 22",
       "postNo": 99887,
       "phone": "+46912654879",
-      "enrolledCourses": [
-        "7623"
-      ]
+      "enrolledCourses": ["7623"]
     },
     {
       "id": "a5c7",
@@ -300,10 +293,29 @@
       "address": "Höjd Gt. 99",
       "postNo": 59987,
       "phone": "+46116659998",
-      "enrolledCourses": [
-        "710f",
-        "7623"
-      ]
+      "enrolledCourses": ["710f", "7623"]
+    },
+    {
+      "id": "24d0",
+      "firstName": "Todo",
+      "lastName": "List",
+      "email": "todo@list.io",
+      "password": "abc123",
+      "address": "Super St. 1",
+      "postNo": 12388,
+      "phone": "+12708546691",
+      "enrolledCourses": ["a832"]
+    },
+    {
+      "id": "2fe9",
+      "firstName": "Fanta",
+      "lastName": "Manta",
+      "email": "fanta@man.ta",
+      "password": "fanta",
+      "address": "Sweet St. 22",
+      "postNo": 48251,
+      "phone": "+46116659998",
+      "enrolledCourses": ["710f", "7cc1"]
     }
   ],
   "teachers": [
@@ -331,6 +343,26 @@
       "id": "17i9",
       "firstName": "Jane",
       "lastName": "Doe"
+    },
+    {
+      "id": "fg5w",
+      "firstName": "Molly",
+      "lastName": "Polly"
+    },
+    {
+      "id": "k898",
+      "firstName": "Steven",
+      "lastName": "Even"
+    },
+    {
+      "id": "as31",
+      "firstName": "Jerry",
+      "lastName": "Perry"
+    },
+    {
+      "id": "op0d",
+      "firstName": "Jack",
+      "lastName": "Pack"
     }
   ]
 }

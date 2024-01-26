@@ -1,10 +1,14 @@
 export const createStudentForm = () => {
   const div = document.createElement('div');
+  div.classList.add('form-container');
 
   div.innerHTML = `
-  <h2>Sign Up</h2>
-  <form id="signUpForm">
-    <div>
+  <h2>
+    Sign Up
+  </h2>
+
+  <form class="form" id="signUpForm">
+    <div class="form-row">
       <label for="firstName">
         First Name*:
       </label>
@@ -17,7 +21,7 @@ export const createStudentForm = () => {
       />
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="lastName">
         Last Name*:
       </label>
@@ -30,7 +34,7 @@ export const createStudentForm = () => {
       />
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="email">
         Email*:
       </label>
@@ -44,30 +48,33 @@ export const createStudentForm = () => {
       />
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="password">
         Password*:
       </label>
 
-      <input
-        type="password"
-        name="password"
-        id="password"
-        placeholder="Password"
-      />
+      <div class="special-input">
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+        />
 
-      <button
-        type="button"
-        id="showEye"
-      >
-        <i
-          class="bi-eye-fill"
-          id="eye"
-        ></i>
-      </button>
+        <button
+          type="button"
+          class="btn eye-btn"
+          id="showEye"
+        >
+          <i
+            class="bi-eye-fill"
+            id="eye"
+          ></i>
+        </button>
+      </div>
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="address">
         Address*:
       </label>
@@ -80,7 +87,7 @@ export const createStudentForm = () => {
       />
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="postNo">
         Post Number*:
       </label>
@@ -96,7 +103,7 @@ export const createStudentForm = () => {
       />
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="phone">
         Phone*:
       </label>
@@ -109,8 +116,8 @@ export const createStudentForm = () => {
       />
     </div>
 
-    <div>
-      <button type="submit">
+    <div class="buttons">
+      <button type="submit" class="btn">
         Sign Up
       </button>
     </div>

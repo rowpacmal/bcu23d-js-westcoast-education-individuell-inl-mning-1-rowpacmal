@@ -1,13 +1,14 @@
 export const createSignIn = () => {
   const div = document.createElement('div');
+  div.classList.add('form-container');
 
   div.innerHTML = `
   <h2>
     Sign In
   </h2>
 
-  <form id="signInForm">
-    <div>
+  <form class="form" id="signInForm">
+    <div class="form-row">
       <label for="email">
         Email:
       </label>
@@ -21,7 +22,7 @@ export const createSignIn = () => {
       />
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="password">
         Password:
       </label>
@@ -34,8 +35,8 @@ export const createSignIn = () => {
       />
     </div>
 
-    <div>
-      <button type="submit">
+    <div class="buttons">
+      <button type="submit" class="btn">
         Sign In
       </button>
     </div>

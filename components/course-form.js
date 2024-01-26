@@ -1,11 +1,14 @@
 export const createCourseForm = () => {
-  const form = document.createElement('form');
+  const form = document.createElement('div');
+  form.classList.add('form-container');
 
   form.innerHTML = `
-  <h1>Post Course</h1>
+  <h2>
+    Post Course
+  </h2>
 
-  <form id="postCourseForm">
-    <div>
+  <form class="form" id="postCourseForm">
+    <div class="form-row">
       <label for="title">
         Title*:
       </label>
@@ -18,7 +21,7 @@ export const createCourseForm = () => {
       />
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="courseNo">
         Course No.*:
       </label>
@@ -35,7 +38,7 @@ export const createCourseForm = () => {
       />
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="instructor">
         Instructor*:
       </label>
@@ -47,30 +50,10 @@ export const createCourseForm = () => {
         <option value="">
           -- Select an instructor --
         </option>
-
-        <option value="o92y">
-          John Doe
-        </option>
-
-        <option value="erq2">
-          Mary Sue
-        </option>
-
-        <option value="870a">
-          Daren Karen
-        </option>
-
-        <option value="4cc6">
-          Sally Sad
-        </option>
-
-        <option value="17i9">
-          Jane Doe
-        </option>
       </select>
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="courseType">
         Type*:
       </label>
@@ -91,7 +74,7 @@ export const createCourseForm = () => {
           Remote
         </option>
 
-        <option value="On-Demand">
+        <option value="Hybrid">
           Hybrid
         </option>
 
@@ -101,7 +84,7 @@ export const createCourseForm = () => {
       </select>
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="shortDescription">
         Introduction*:
       </label>
@@ -115,7 +98,7 @@ export const createCourseForm = () => {
       ></textarea>
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="courseSlogan">
         Slogan*:
       </label>
@@ -128,7 +111,7 @@ export const createCourseForm = () => {
       />
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="longDescription">
         Description*:
       </label>
@@ -142,7 +125,7 @@ export const createCourseForm = () => {
       ></textarea>
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="courseStart">
         Start date*:
       </label>
@@ -154,27 +137,29 @@ export const createCourseForm = () => {
       />
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="courseLength">
         Length*:
       </label>
 
-      <input
-        type="number"
-        name="courseLength"
-        id="courseLength"
-        placeholder="Days"
-        value="0"
-        min="0"
-        max="1825"
-      />
+      <div class ="special-input">
+        <input
+          type="number"
+          name="courseLength"
+          id="courseLength"
+          placeholder="Days"
+          value="0"
+          min="0"
+          max="1825"
+        />
 
-      <span>
-        Days
-      </span>
+        <span class="extra-text">
+          Days
+        </span>
+      </div>
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="level">Difficulty*:</label>
 
       <select
@@ -199,73 +184,75 @@ export const createCourseForm = () => {
       </select>
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="rating">
         Rating*:
       </label>
 
-      <input
-        type="number"
-        name="rating"
-        id="rating"
-        placeholder="Rating"
-        value="0"
-        min="0"
-        max="9999999"
-      />
+      <div class ="special-input">
+        <input
+          type="number"
+          name="rating"
+          id="rating"
+          placeholder="Rating"
+          value="0"
+          min="0"
+          max="9999999"
+        />
 
-      <span>
-        (demo)
-      </span>
+        <span class="extra-text">
+          (demo)
+        </span>
+      </div>
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="score">
         Score*:
       </label>
 
-      <input
-        type="number"
-        name="score"
-        id="score"
-        placeholder="Score"
-        value="5"
-        step=".1"
-        min="0"
-        max="10"
-      />
+      <div class="special-input">
+        <input
+          type="number"
+          name="score"
+          id="score"
+          placeholder="Score"
+          value="5"
+          step=".1"
+          min="0"
+          max="10"
+        />
 
-      <span>
-        / 10
-      </span>
-
-      <span>
-        (demo)
-      </span>
+        <span class="extra-text">
+          / 10 (demo)
+        </span>
+      </div>
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="enrollmentFee">
         Price*:
       </label>
 
-      <span>
-        <i class="bi-currency-euro"></i>
-      </span>
+      <div class="special-input">
+        <input
+          type="number"
+          name="enrollmentFee"
+          id="enrollmentFee"
+          placeholder="Price"
+          value="9.99"
+          step=".01"
+          min="0"
+          max="999.99"
+        />
 
-      <input
-        type="number"
-        name="enrollmentFee"
-        id="enrollmentFee"
-        placeholder="Price"
-        value="9.99"
-        step=".01"
-        min="0"
-        max="999.99"
-      />
+        <span class="extra-text">
+          <i class="bi-currency-euro"></i>
+        </span>
+      </div>
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="coverImage">
         Image*:
       </label>
@@ -277,7 +264,7 @@ export const createCourseForm = () => {
       />
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="altText">
         Alt text*:
       </label>
@@ -290,14 +277,16 @@ export const createCourseForm = () => {
       />
     </div>
 
-    <div>
-      <a href="/pages/admin/admin.html">
+    <div class="buttons">
+      <a href="/pages/admin/admin.html" class="btn-link btn-limiter">
         <i class="bi-caret-left-fill"></i>
 
-        <span> Go Back </span>
+        <span>
+          Go Back
+        </span>
       </a>
 
-      <button type="submit">
+      <button type="submit" class="btn">
         Post
       </button>
     </div>

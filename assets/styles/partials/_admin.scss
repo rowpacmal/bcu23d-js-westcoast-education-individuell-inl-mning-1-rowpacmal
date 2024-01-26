@@ -1,0 +1,60 @@
+.admin {
+  margin: 100px auto 0;
+  padding: 0 1rem;
+  max-width: 1500px;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+.overview {
+  overflow-x: scroll;
+
+  h3,
+  h4 {
+    margin-bottom: 0.5rem;
+  }
+
+  table {
+    background-color: $color2;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+    border: 1px solid $color3;
+    table-layout: fixed;
+    width: 100%;
+
+    th {
+      color: $white;
+      background-color: $color1;
+      border-bottom: 1px solid $color3;
+      margin-bottom: 1rem;
+      text-align: start;
+      padding: 1rem;
+      width: 180px;
+    }
+
+    td {
+      border-bottom: 1px solid $color3;
+      text-align: start;
+      padding: 1rem;
+      word-wrap: break-word;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .admin {
+    padding: 0 2rem;
+  }
+
+  .overview table {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .overview {
+    overflow-x: auto;
+  }
+}

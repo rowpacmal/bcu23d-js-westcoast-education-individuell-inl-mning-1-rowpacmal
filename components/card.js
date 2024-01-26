@@ -1,11 +1,7 @@
-import { appManager } from '/lib/appManager.js';
-
-export const createCourseCard = async (data) => {
+export const createCourseCard = (data) => {
   const card = document.createElement('div');
   card.classList.add('card');
   card.setAttribute('data-id', data.id);
-
-  const instructor = await appManager.getTeacher(data.instructor);
 
   card.innerHTML = `
   <a href="/pages/course-details.html?id=${data.id}">
@@ -35,11 +31,7 @@ export const createCourseCard = async (data) => {
       </span>
 
       <span>
-        ${instructor.firstName}
-      </span>
-
-      <span>
-        ${instructor.lastName}
+        ${data.instructor}
       </span>
     </div>
 
