@@ -6,13 +6,11 @@ export const createAdminOverview = () => {
 
   const h2 = document.createElement('h2');
   h2.appendChild(document.createTextNode('Admin Overview'));
-
   section.appendChild(h2);
 
   const overview = document.createElement('div');
   overview.classList.add('overview');
   createCourseOverview(overview);
-
   section.appendChild(overview);
 
   const buttonContainer = document.createElement('div');
@@ -76,7 +74,6 @@ const createCourseOverview = async (parent) => {
     if (participants.length > 0) {
       participants.forEach(async (studentId) => {
         const student = await appManager.getStudent(studentId);
-
         const tr = document.createElement('tr');
         const tbodyInfo = [
           `(${student.id}) `,
@@ -105,7 +102,6 @@ const createCourseOverview = async (parent) => {
       td.setAttribute('colspan', 7);
       td.appendChild(document.createTextNode(massage));
       tr.appendChild(td);
-
       tbody.appendChild(tr);
     }
 

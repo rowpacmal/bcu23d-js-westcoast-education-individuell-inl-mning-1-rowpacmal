@@ -1,8 +1,8 @@
 export const createHero = () => {
-  const div = document.createElement('div');
-  div.classList.add('hero');
+  const container = document.createElement('div');
+  container.classList.add('hero');
 
-  div.innerHTML = `
+  container.innerHTML = `
   <section>
     <header>
       <h1>
@@ -18,5 +18,5 @@ export const createHero = () => {
   </section>
   `;
 
-  return div;
+  return container;
 };

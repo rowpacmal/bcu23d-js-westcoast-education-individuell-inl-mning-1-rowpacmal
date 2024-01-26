@@ -1,8 +1,8 @@
 export const createCourseForm = () => {
-  const form = document.createElement('div');
-  form.classList.add('form-container');
+  const container = document.createElement('div');
+  container.classList.add('form-container');
 
-  form.innerHTML = `
+  container.innerHTML = `
   <h2>
     Post Course
   </h2>
@@ -293,5 +293,5 @@ export const createCourseForm = () => {
   </form>
   `;
 
-  return form;
+  return container;
 };

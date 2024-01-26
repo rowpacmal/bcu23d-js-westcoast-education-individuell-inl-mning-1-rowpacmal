@@ -1,8 +1,8 @@
 export const createSignIn = () => {
-  const div = document.createElement('div');
-  div.classList.add('form-container');
+  const container = document.createElement('div');
+  container.classList.add('form-container');
 
-  div.innerHTML = `
+  container.innerHTML = `
   <h2>
     Sign In
   </h2>
@@ -43,5 +43,5 @@ export const createSignIn = () => {
   </form>
   `;
 
-  return div;
+  return container;
 };
