@@ -94,6 +94,8 @@ export const createCourseDetails = (data) => {
         Enroll
       </button>
     </div>
+
+    <div id="statusMassage" class="small-text"></div>
   </div>
 
   <section>

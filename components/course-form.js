@@ -290,6 +290,8 @@ export const createCourseForm = () => {
         Post
       </button>
     </div>
+
+    <div id="statusMassage" class="small-text"></div>
   </form>
   `;
 

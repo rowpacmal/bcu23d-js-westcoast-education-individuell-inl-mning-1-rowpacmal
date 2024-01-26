@@ -34,6 +34,13 @@ const createCourseOverview = async (parent) => {
     const container = document.createElement('div');
     container.setAttribute('data-id', course.id);
 
+    const courseNo = document.createElement('div');
+    container.appendChild(courseNo);
+
+    const number = document.createElement('span');
+    number.appendChild(document.createTextNode(`(${course.courseNo})`));
+    courseNo.appendChild(number);
+
     const title = document.createElement('h3');
     title.appendChild(document.createTextNode(course.title));
     container.appendChild(title);

@@ -17,7 +17,7 @@
       "enrollmentFee": 49.99,
       "coverImage": "joan-gamell-XmZ4GDAp9G0-unsplash_2400x1600.webp",
       "altText": "The Complete Master Course: React and Beyond",
-      "participants": ["2655", "122f", "urgf", "a5c7"]
+      "participants": ["2655", "122f", "urgf", "a5c7", "d7a7"]
     },
     {
       "id": "91f7",
@@ -55,7 +55,7 @@
       "enrollmentFee": 19.99,
       "coverImage": "mohammad-rahmani-8qEB0fTe9Vw-unsplash_2400x1600.webp",
       "altText": "The Complete JavaScript Course for Beginners",
-      "participants": ["urgf", "2655", "ff96", "9dfb", "a5c7", "2fe9"]
+      "participants": ["urgf", "2655", "ff96", "9dfb", "a5c7", "2fe9", "d7a7"]
     },
     {
       "id": "f117",
@@ -131,7 +131,7 @@
       "enrollmentFee": 29.99,
       "coverImage": "arian-darvishi-wh-RPfR_3_M-unsplash_2400x1600.webp",
       "altText": "Web Development Wizardry: Crafting Dynamic and Responsive Websites",
-      "participants": ["urgf", "24d0"]
+      "participants": ["urgf", "24d0", "2655", "d7a7"]
     }
   ],
   "students": [
@@ -161,7 +161,7 @@
       "address": "Street 34",
       "postNo": "55678",
       "phone": "+46912654879",
-      "enrolledCourses": ["7623", "710f", "7cc1"]
+      "enrolledCourses": ["7623", "710f", "7cc1", "a832"]
     },
     {
       "id": "4ef0",
@@ -316,6 +316,17 @@
       "postNo": 48251,
       "phone": "+46116659998",
       "enrolledCourses": ["710f", "7cc1"]
+    },
+    {
+      "id": "d7a7",
+      "firstName": "Tom",
+      "lastName": "Lom",
+      "email": "tom@lom.se",
+      "password": "abc123",
+      "address": "Smart St. 92",
+      "postNo": 48571,
+      "phone": "+12708546691",
+      "enrolledCourses": ["710f", "a832", "7623"]
     }
   ],
   "teachers": [

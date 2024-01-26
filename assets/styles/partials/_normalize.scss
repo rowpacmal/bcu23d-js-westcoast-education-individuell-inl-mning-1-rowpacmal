@@ -47,6 +47,16 @@ hr {
   font-weight: bold;
 }
 
+#statusMassage {
+  display: flex;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  align-items: center;
+  height: 2.5rem;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+}
+
 @media (min-width: 2000px) {
   body {
     max-width: 1600px;
