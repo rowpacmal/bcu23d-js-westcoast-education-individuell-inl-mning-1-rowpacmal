@@ -1,0 +1,47 @@
+.hero {
+  margin-bottom: 100px;
+  padding: 2rem 1rem;
+
+  section {
+    background-color: $color2;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+    header {
+      color: $white;
+      background-color: $color6;
+      padding: 1rem;
+
+      h1 {
+        font-size: 2rem;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      }
+    }
+
+    p {
+      font-family: $font-alt;
+      font-size: 1rem;
+      padding: 1rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: url('/assets/images/resources/marvin-meyer-SYTO3xs06fU-unsplash_2400x1600.webp');
+    background-size: cover;
+    background-position: top;
+    min-height: 500px;
+    padding: 2rem;
+
+    section {
+      max-width: 800px;
+      text-align: start;
+
+      p {
+        font-size: 1.5rem;
+        padding: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@mixin input-base {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border-radius: 0;
+  border: 1px solid $color3;
+}
+
+.form-container {
+  margin: 100px auto 0;
+  max-width: 600px;
+
+  h2 {
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+.form {
+  background-color: $color2;
+  border: 1px solid $color3;
+  padding: 1rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+  input,
+  select {
+    @include input-base();
+    padding: 0 1rem;
+    height: 50px;
+  }
+
+  textarea {
+    @include input-base();
+    padding: 1rem;
+    resize: none;
+  }
+
+  input[type='file'] {
+    height: auto;
+    padding: 0.5rem;
+    border: none;
+
+    &::file-selector-button {
+      @include btn-base();
+      margin-right: 1rem;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        @include btn-hover();
+      }
+
+      &:active {
+        @include btn-active();
+      }
+    }
+  }
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.special-input {
+  display: flex;
+}
+
+.eye-btn {
+  margin-left: 0.5rem;
+  min-width: 50px;
+  height: 50px;
+  padding: 0;
+}
+
+.extra-text {
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+  height: 50px;
+
+  i {
+    font-size: 1.5rem;
+  }
+}

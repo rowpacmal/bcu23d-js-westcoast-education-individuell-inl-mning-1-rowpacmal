@@ -1,0 +1,30 @@
+.course-details {
+  max-width: 900px;
+  margin: 100px auto 0;
+  padding: 0 1rem;
+
+  * {
+    margin-bottom: 0.5rem;
+  }
+
+  img {
+    height: 500px;
+    object-fit: cover;
+    border: 0.5rem solid $color6;
+  }
+
+  h3 {
+    margin-top: 2rem;
+  }
+
+  q {
+    font-style: italic;
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .course-details {
+    padding: 0 2rem;
+  }
+}
