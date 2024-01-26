@@ -1,10 +1,9 @@
 export const createFooter = () => {
-  const div = document.createElement('div');
-  div.classList.add('footer');
+  const container = document.createElement('div');
+  container.classList.add('footer');
 
-  div.innerHTML = `
+  container.innerHTML = `
   <div class="links">
-
     <div class="copy">
       <a
         href="/"
@@ -25,5 +24,5 @@ export const createFooter = () => {
   </div>
   `;
 
-  return div;
+  return container;
 };
