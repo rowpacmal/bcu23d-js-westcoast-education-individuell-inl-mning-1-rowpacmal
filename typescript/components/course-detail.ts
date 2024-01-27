@@ -1,5 +1,7 @@
-export const createCourseDetails = (data) => {
-  const article = document.createElement('article');
+import { Course } from '../models/CourseModel.js';
+
+export const createCourseDetails = (data: Course): HTMLElement => {
+  const article: HTMLElement = document.createElement('article');
   article.classList.add('course-details');
   article.setAttribute('data-id', data.id);
 

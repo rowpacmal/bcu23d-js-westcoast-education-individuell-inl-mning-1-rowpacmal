@@ -10,7 +10,7 @@ export const createHome = () => {
     </header>
 
     <p>
-      Choose from over 100 classroom, remote and on-demand courses with new additions published every year
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus pariatur iste doloribus, in esse deserunt.
     </p>
   `;
 

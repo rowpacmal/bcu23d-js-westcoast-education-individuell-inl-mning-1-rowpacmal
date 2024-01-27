@@ -73,14 +73,6 @@ export const createCourseForm = () => {
         <option value="Remote">
           Remote
         </option>
-
-        <option value="Hybrid">
-          Hybrid
-        </option>
-
-        <option value="On-Demand">
-          On-Demand
-        </option>
       </select>
     </div>
 
