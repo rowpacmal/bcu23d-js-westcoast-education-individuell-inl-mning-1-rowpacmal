@@ -17,7 +17,13 @@
       "enrollmentFee": 49.99,
       "coverImage": "joan-gamell-XmZ4GDAp9G0-unsplash_2400x1600.webp",
       "altText": "The Complete Master Course: React and Beyond",
-      "participants": ["2655", "122f", "urgf", "a5c7"]
+      "participants": [
+        "2655",
+        "122f",
+        "urgf",
+        "a5c7",
+        "d7a7"
+      ]
     },
     {
       "id": "91f7",
@@ -55,14 +61,22 @@
       "enrollmentFee": 19.99,
       "coverImage": "mohammad-rahmani-8qEB0fTe9Vw-unsplash_2400x1600.webp",
       "altText": "The Complete JavaScript Course for Beginners",
-      "participants": ["urgf", "2655", "ff96", "9dfb", "a5c7", "2fe9"]
+      "participants": [
+        "urgf",
+        "2655",
+        "ff96",
+        "9dfb",
+        "a5c7",
+        "2fe9",
+        "d7a7"
+      ]
     },
     {
       "id": "f117",
       "title": "The Complete Python Course",
       "courseNo": 5984479321,
       "instructor": "Sally Sad",
-      "courseType": "On-Demand",
+      "courseType": "Remote",
       "shortDescription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sed facilis impedit iusto error perspiciatis, nihil aut reiciendis cumque suscipit. Voluptatibus id totam illum cupiditate sapiente earum autem, similique voluptatum.",
       "courseSlogan": "Is it a worm? Is it a Snake? No, it's Python!",
       "longDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint in voluptatum cupiditate explicabo sit molestias incidunt? Aspernatur, quasi nostrum earum magnam incidunt possimus! Porro totam cumque perspiciatis quod quae facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ab vero aspernatur est ex sapiente cum autem! Necessitatibus repudiandae ratione hic, id voluptatibus nemo. Esse, labore quasi. Explicabo, corrupti veritatis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, quibusdam! Illum, id. Ipsum dolor dolore eligendi nulla fugiat. Modi quis veniam rerum provident id reprehenderit mollitia illum quisquam cupiditate saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magni laboriosam rem voluptas atque sint quia. Recusandae perferendis, sint dicta in corrupti cumque officiis. Suscipit ullam quia natus ipsa minima! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit pariatur, excepturi voluptate blanditiis ratione consequatur, nulla optio vero expedita labore repellat iure, natus tempora possimus magni repudiandae ut earum.",
@@ -93,7 +107,9 @@
       "enrollmentFee": 49.99,
       "coverImage": "hitesh-choudhary-t1PaIbMTJIM-unsplash_2400x1340.webp",
       "altText": "Master Class in AI and Machine Learning",
-      "participants": ["urgf"]
+      "participants": [
+        "urgf"
+      ]
     },
     {
       "id": "7cc1",
@@ -112,14 +128,18 @@
       "enrollmentFee": 19.99,
       "coverImage": "gabriel-heinzer-g5jpH62pwes-unsplash_2400x1800.webp",
       "altText": "Node.js for Beginners",
-      "participants": ["2655", "urgf", "2fe9"]
+      "participants": [
+        "2655",
+        "urgf",
+        "2fe9"
+      ]
     },
     {
       "id": "a832",
       "title": "Web Development Wizardry: Crafting Dynamic and Responsive Websites",
       "courseNo": 9654128740,
       "instructor": "Jack Pack",
-      "courseType": "Hybrid",
+      "courseType": "Classroom",
       "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod justo nec tellus tincidunt, vel tincidunt elit commodo. Fusce vehicula velit nec sem facilisis, et suscipit augue ullamcorper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
       "courseSlogan": "Unlock the Digital Realm",
       "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac ex ut dolor ultricies vestibulum. Nullam tristique eros id dolor accumsan, vel ullamcorper tortor tristique. Integer efficitur malesuada tellus, nec scelerisque sapien pellentesque eu. Maecenas eget dictum elit. Sed eleifend, justo nec bibendum tristique, nisl nulla tincidunt orci, id tincidunt odio lacus vel arcu. Curabitur vel eleifend ex. Sed consectetur, felis eu tincidunt rhoncus, dui felis accumsan justo, vel fermentum metus libero at est. Suspendisse potenti. Vivamus sagittis justo et nisi cursus, vel hendrerit odio bibendum. Integer nec diam quam. Sed eu tincidunt ex. In hac habitasse platea dictumst. Nullam ultricies diam ut mi congue, id convallis sem feugiat. Nunc id leo ut purus facilisis eleifend. Vivamus aliquet, velit vitae fringilla egestas, dolor odio facilisis libero, a hendrerit lacus risus non justo.",
@@ -131,7 +151,13 @@
       "enrollmentFee": 29.99,
       "coverImage": "arian-darvishi-wh-RPfR_3_M-unsplash_2400x1600.webp",
       "altText": "Web Development Wizardry: Crafting Dynamic and Responsive Websites",
-      "participants": ["urgf", "24d0"]
+      "participants": [
+        "24d0",
+        "2655",
+        "d7a7",
+        "urgf",
+        "6c76"
+      ]
     }
   ],
   "students": [
@@ -150,7 +176,13 @@
       "address": "Street 12",
       "postNo": "12345",
       "phone": "+46123456789",
-      "enrolledCourses": ["710f", "7623", "5c04", "7cc1", "a832"]
+      "enrolledCourses": [
+        "710f",
+        "7623",
+        "5c04",
+        "7cc1",
+        "a832"
+      ]
     },
     {
       "id": "2655",
@@ -161,7 +193,12 @@
       "address": "Street 34",
       "postNo": "55678",
       "phone": "+46912654879",
-      "enrolledCourses": ["7623", "710f", "7cc1"]
+      "enrolledCourses": [
+        "7623",
+        "710f",
+        "7cc1",
+        "a832"
+      ]
     },
     {
       "id": "4ef0",
@@ -249,7 +286,9 @@
       "address": "Malin Gatan 1",
       "postNo": 88921,
       "phone": "+46912654879",
-      "enrolledCourses": ["710f"]
+      "enrolledCourses": [
+        "710f"
+      ]
     },
     {
       "id": "1087",
@@ -271,7 +310,9 @@
       "address": "Sleep St. 13",
       "postNo": 89521,
       "phone": "+46912654879",
-      "enrolledCourses": ["710f"]
+      "enrolledCourses": [
+        "710f"
+      ]
     },
     {
       "id": "122f",
@@ -282,7 +323,9 @@
       "address": "Lilla Gatan 22",
       "postNo": 99887,
       "phone": "+46912654879",
-      "enrolledCourses": ["7623"]
+      "enrolledCourses": [
+        "7623"
+      ]
     },
     {
       "id": "a5c7",
@@ -293,7 +336,10 @@
       "address": "Höjd Gt. 99",
       "postNo": 59987,
       "phone": "+46116659998",
-      "enrolledCourses": ["710f", "7623"]
+      "enrolledCourses": [
+        "710f",
+        "7623"
+      ]
     },
     {
       "id": "24d0",
@@ -304,7 +350,9 @@
       "address": "Super St. 1",
       "postNo": 12388,
       "phone": "+12708546691",
-      "enrolledCourses": ["a832"]
+      "enrolledCourses": [
+        "a832"
+      ]
     },
     {
       "id": "2fe9",
@@ -315,7 +363,38 @@
       "address": "Sweet St. 22",
       "postNo": 48251,
       "phone": "+46116659998",
-      "enrolledCourses": ["710f", "7cc1"]
+      "enrolledCourses": [
+        "710f",
+        "7cc1"
+      ]
+    },
+    {
+      "id": "d7a7",
+      "firstName": "Tom",
+      "lastName": "Lom",
+      "email": "tom@lom.se",
+      "password": "abc123",
+      "address": "Smart St. 92",
+      "postNo": 48571,
+      "phone": "+12708546691",
+      "enrolledCourses": [
+        "710f",
+        "a832",
+        "7623"
+      ]
+    },
+    {
+      "id": "6c76",
+      "firstName": "Stor",
+      "lastName": "Hök",
+      "email": "hok@bird.se",
+      "password": "1234",
+      "address": "Coco St. 42",
+      "postNo": 88954,
+      "phone": "+12708546691",
+      "enrolledCourses": [
+        "a832"
+      ]
     }
   ],
   "teachers": [

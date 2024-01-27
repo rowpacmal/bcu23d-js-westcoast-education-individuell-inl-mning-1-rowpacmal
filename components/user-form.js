@@ -121,6 +121,8 @@ export const createStudentForm = () => {
         Sign Up
       </button>
     </div>
+
+    <div id="statusMassage" class="small-text"></div>
   </form>
   `;
 

@@ -1,9 +1,8 @@
 export const createCourseDetails = (data) => {
-  const article = document.createElement('article');
-  article.classList.add('course-details');
-  article.setAttribute('data-id', data.id);
-
-  article.innerHTML = `
+    const article = document.createElement('article');
+    article.classList.add('course-details');
+    article.setAttribute('data-id', data.id);
+    article.innerHTML = `
   <div>
     <img
       src="/assets/images/courses/${data.coverImage}"
@@ -120,6 +119,5 @@ export const createCourseDetails = (data) => {
     </section>
   </section>
   `;
-
-  return article;
+    return article;
 };

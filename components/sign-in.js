@@ -40,6 +40,8 @@ export const createSignIn = () => {
         Sign In
       </button>
     </div>
+
+    <div id="statusMassage" class="small-text"></div>
   </form>
   `;
 
