@@ -22,8 +22,8 @@ This is an early demo of the platform currently under development.
    npm install
    ```
 2. Next start the json-server.
-   ```
-   bash npm start
+   ```bash
+   npm start
    ```
 3. Use email `admin@admin.we` and password `admin` to get access to the admin overview.
 
