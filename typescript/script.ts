@@ -1,16 +1,18 @@
 import { createCourseDetails } from './components/course-detail.js';
+import { Course } from './models/CourseModel.js';
+import { Student } from './models/StudentModel.js';
 import { getCourse, updateCourse } from './services/course.js';
 import { getStudent, updateStudent } from './services/student.js';
 import { sendStatusMassage } from './utils/tools.js';
 
-const main = document.querySelector<HTMLElement>('#main')!;
+const main: HTMLElement = document.querySelector<HTMLElement>('#main')!;
 
 const initApp = async (): Promise<void> => {
   const courseId: string = location.search.split('=')[1];
 
   if (courseId) {
-    const data = await getCourse(courseId);
-    const courseDetails = createCourseDetails(data);
+    const data: Course = await getCourse(courseId);
+    const courseDetails: HTMLElement = createCourseDetails(data);
 
     main.appendChild(courseDetails);
 
@@ -20,8 +22,9 @@ const initApp = async (): Promise<void> => {
   }
 };
 
-const courseDetailsFunc = (id: string) => {
-  const button = document.querySelector<HTMLButtonElement>('#enroll')!;
+const courseDetailsFunc = (id: string): void => {
+  const button: HTMLButtonElement =
+    document.querySelector<HTMLButtonElement>('#enroll')!;
 
   const enrollCourse = async (): Promise<void> => {
     const key: string = localStorage.getItem('weLoginKey')!;
@@ -31,8 +34,8 @@ const courseDetailsFunc = (id: string) => {
       statusText = `The admin can't enroll in courses.`;
       sendStatusMassage(statusText, 'warning');
     } else if (key) {
-      const student = await getStudent(key);
-      const course = await getCourse(id);
+      const student: Student = await getStudent(key);
+      const course: Course = await getCourse(id);
       const enrollment: string = student.enrolledCourses.find(
         (item: string) => item === course.id
       )!;
@@ -57,7 +60,7 @@ const courseDetailsFunc = (id: string) => {
     }
   };
 
-  button.addEventListener('click', enrollCourse);
+  button.addEventListener<'click'>('click', enrollCourse)!;
 };
 
-document.addEventListener('DOMContentLoaded', initApp);
+document.addEventListener<'DOMContentLoaded'>('DOMContentLoaded', initApp)!;

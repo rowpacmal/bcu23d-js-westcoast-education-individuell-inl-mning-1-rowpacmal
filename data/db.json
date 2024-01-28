@@ -68,7 +68,8 @@
         "9dfb",
         "a5c7",
         "2fe9",
-        "d7a7"
+        "d7a7",
+        "10b4"
       ]
     },
     {
@@ -158,6 +159,27 @@
         "urgf",
         "6c76"
       ]
+    },
+    {
+      "id": "9deb",
+      "title": "Smart Contracts 101: Solidity Programming Essentials",
+      "courseNo": 9854471263,
+      "instructor": "Jerry Perry",
+      "courseType": "Remote",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "courseSlogan": "Unlock the Future: Master Smart Contracts with Solidity 101!",
+      "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "courseStart": "2024-04-01",
+      "courseLength": 120,
+      "level": "All Levels",
+      "rating": 1547,
+      "score": 8.3,
+      "enrollmentFee": 39.99,
+      "coverImage": "james-harrison-vpOeXr5wmR4-unsplash_2400x1600.webp",
+      "altText": "Smart Contracts 101: Solidity Programming Essentials",
+      "participants": [
+        "urgf"
+      ]
     }
   ],
   "students": [
@@ -181,7 +203,8 @@
         "7623",
         "5c04",
         "7cc1",
-        "a832"
+        "a832",
+        "9deb"
       ]
     },
     {
@@ -394,6 +417,19 @@
       "phone": "+12708546691",
       "enrolledCourses": [
         "a832"
+      ]
+    },
+    {
+      "id": "10b4",
+      "firstName": "Fia",
+      "lastName": "Mia",
+      "email": "fia@mia.se",
+      "password": "1234",
+      "address": "Happy st. 12",
+      "postNo": 14257,
+      "phone": "+66069845518",
+      "enrolledCourses": [
+        "710f"
       ]
     }
   ],
