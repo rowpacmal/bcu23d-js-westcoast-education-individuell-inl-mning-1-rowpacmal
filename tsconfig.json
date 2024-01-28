@@ -8,5 +8,5 @@
     "skipLibCheck": true
   },
   "include": ["typescript"],
-  "exclude": ["node_modules", "archive"]
+  "exclude": ["node_modules", "archive", ".vscode"]
 }
