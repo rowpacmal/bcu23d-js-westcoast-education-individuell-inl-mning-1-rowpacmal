@@ -59,6 +59,7 @@ hr {
   height: 2.5rem;
   transition: all 1s ease-in-out;
   opacity: 0;
+  user-select: none;
 }
 
 @media (min-width: 1920px) {
