@@ -1,0 +1,75 @@
+.user {
+  margin: 100px auto 0;
+  max-width: 800px;
+
+  h2,
+  h3,
+  h4,
+  p {
+    padding: 0 1rem;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-style: italic;
+    color: $color6;
+    font-size: x-large;
+
+    &::before,
+    &::after {
+      color: $color1;
+      font-size: large;
+    }
+
+    &::before {
+      content: 'Welcome to WestCoast Education, ';
+    }
+
+    &::after {
+      content: '!';
+    }
+  }
+
+  h4 {
+    margin: 2rem 0 1rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    background-color: $color2;
+    padding: 1rem;
+    border: 1px solid $color3;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  img {
+    height: 200px;
+    object-fit: cover;
+    border: 0.25rem solid $color6;
+  }
+
+  a {
+    max-width: 175px;
+    margin: 1rem 0;
+  }
+
+  .user-courses li:not(:last-child)::after {
+    content: '';
+    margin-top: 1rem;
+    display: block;
+    border-bottom: 1px solid $color3;
+    width: 100%;
+  }
+
+  .account-details {
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+}
