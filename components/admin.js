@@ -31,7 +31,7 @@ const createCourseOverview = async (parent) => {
   const courses = await appManager.getCourse();
 
   courses.forEach((course) => {
-    const container = document.createElement('div');
+    const container = document.createElement('section');
     container.setAttribute('data-id', course.id);
 
     const courseNo = document.createElement('div');

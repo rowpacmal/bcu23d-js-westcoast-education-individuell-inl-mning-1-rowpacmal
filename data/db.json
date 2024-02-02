@@ -17,13 +17,7 @@
       "enrollmentFee": 49.99,
       "coverImage": "joan-gamell-XmZ4GDAp9G0-unsplash_2400x1600.webp",
       "altText": "The Complete Master Course: React and Beyond",
-      "participants": [
-        "2655",
-        "122f",
-        "urgf",
-        "a5c7",
-        "d7a7"
-      ]
+      "participants": ["2655", "122f", "urgf", "a5c7", "d7a7", "1f92"]
     },
     {
       "id": "91f7",
@@ -42,7 +36,7 @@
       "enrollmentFee": 39.99,
       "coverImage": "hitesh-choudhary-pMnw5BSZYsA-unsplash_2400x1600.webp",
       "altText": "The Complete Full-Stack Web Developer Course",
-      "participants": []
+      "participants": ["urgf"]
     },
     {
       "id": "710f",
@@ -94,7 +88,7 @@
     {
       "id": "5c04",
       "title": "Master Class in AI and Machine Learning",
-      "courseNo": 184560023,
+      "courseNo": 1845600232,
       "instructor": "Jane Doe",
       "courseType": "Classroom",
       "shortDescription": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sed facilis impedit iusto error perspiciatis, nihil aut reiciendis cumque suscipit. Voluptatibus id totam illum cupiditate sapiente earum autem, similique voluptatum.",
@@ -108,9 +102,7 @@
       "enrollmentFee": 49.99,
       "coverImage": "hitesh-choudhary-t1PaIbMTJIM-unsplash_2400x1340.webp",
       "altText": "Master Class in AI and Machine Learning",
-      "participants": [
-        "urgf"
-      ]
+      "participants": ["urgf"]
     },
     {
       "id": "7cc1",
@@ -129,11 +121,7 @@
       "enrollmentFee": 19.99,
       "coverImage": "gabriel-heinzer-g5jpH62pwes-unsplash_2400x1800.webp",
       "altText": "Node.js for Beginners",
-      "participants": [
-        "2655",
-        "urgf",
-        "2fe9"
-      ]
+      "participants": ["2655", "urgf", "2fe9"]
     },
     {
       "id": "a832",
@@ -152,13 +140,7 @@
       "enrollmentFee": 29.99,
       "coverImage": "arian-darvishi-wh-RPfR_3_M-unsplash_2400x1600.webp",
       "altText": "Web Development Wizardry: Crafting Dynamic and Responsive Websites",
-      "participants": [
-        "24d0",
-        "2655",
-        "d7a7",
-        "urgf",
-        "6c76"
-      ]
+      "participants": ["24d0", "2655", "d7a7", "urgf", "6c76"]
     },
     {
       "id": "9deb",
@@ -177,9 +159,7 @@
       "enrollmentFee": 39.99,
       "coverImage": "james-harrison-vpOeXr5wmR4-unsplash_2400x1600.webp",
       "altText": "Smart Contracts 101: Solidity Programming Essentials",
-      "participants": [
-        "urgf"
-      ]
+      "participants": ["urgf"]
     }
   ],
   "students": [
@@ -204,7 +184,8 @@
         "5c04",
         "7cc1",
         "a832",
-        "9deb"
+        "9deb",
+        "91f7"
       ]
     },
     {
@@ -216,12 +197,7 @@
       "address": "Street 34",
       "postNo": "55678",
       "phone": "+46912654879",
-      "enrolledCourses": [
-        "7623",
-        "710f",
-        "7cc1",
-        "a832"
-      ]
+      "enrolledCourses": ["7623", "710f", "7cc1", "a832"]
     },
     {
       "id": "4ef0",
@@ -309,9 +285,7 @@
       "address": "Malin Gatan 1",
       "postNo": 88921,
       "phone": "+46912654879",
-      "enrolledCourses": [
-        "710f"
-      ]
+      "enrolledCourses": ["710f"]
     },
     {
       "id": "1087",
@@ -333,9 +307,7 @@
       "address": "Sleep St. 13",
       "postNo": 89521,
       "phone": "+46912654879",
-      "enrolledCourses": [
-        "710f"
-      ]
+      "enrolledCourses": ["710f"]
     },
     {
       "id": "122f",
@@ -346,9 +318,7 @@
       "address": "Lilla Gatan 22",
       "postNo": 99887,
       "phone": "+46912654879",
-      "enrolledCourses": [
-        "7623"
-      ]
+      "enrolledCourses": ["7623"]
     },
     {
       "id": "a5c7",
@@ -359,10 +329,7 @@
       "address": "Höjd Gt. 99",
       "postNo": 59987,
       "phone": "+46116659998",
-      "enrolledCourses": [
-        "710f",
-        "7623"
-      ]
+      "enrolledCourses": ["710f", "7623"]
     },
     {
       "id": "24d0",
@@ -373,9 +340,7 @@
       "address": "Super St. 1",
       "postNo": 12388,
       "phone": "+12708546691",
-      "enrolledCourses": [
-        "a832"
-      ]
+      "enrolledCourses": ["a832"]
     },
     {
       "id": "2fe9",
@@ -386,10 +351,7 @@
       "address": "Sweet St. 22",
       "postNo": 48251,
       "phone": "+46116659998",
-      "enrolledCourses": [
-        "710f",
-        "7cc1"
-      ]
+      "enrolledCourses": ["710f", "7cc1"]
     },
     {
       "id": "d7a7",
@@ -400,11 +362,7 @@
       "address": "Smart St. 92",
       "postNo": 48571,
       "phone": "+12708546691",
-      "enrolledCourses": [
-        "710f",
-        "a832",
-        "7623"
-      ]
+      "enrolledCourses": ["710f", "a832", "7623"]
     },
     {
       "id": "6c76",
@@ -415,9 +373,7 @@
       "address": "Coco St. 42",
       "postNo": 88954,
       "phone": "+12708546691",
-      "enrolledCourses": [
-        "a832"
-      ]
+      "enrolledCourses": ["a832"]
     },
     {
       "id": "10b4",
@@ -428,9 +384,18 @@
       "address": "Happy st. 12",
       "postNo": 14257,
       "phone": "+66069845518",
-      "enrolledCourses": [
-        "710f"
-      ]
+      "enrolledCourses": ["710f"]
+    },
+    {
+      "id": "1f92",
+      "firstName": "Alma",
+      "lastName": "Almason",
+      "email": "alma@alma.al",
+      "password": "alma",
+      "address": "Alma Gt. 1",
+      "postNo": 10547,
+      "phone": "+46116659998",
+      "enrolledCourses": ["7623"]
     }
   ],
   "teachers": [
@@ -478,6 +443,14 @@
       "id": "op0d",
       "firstName": "Jack",
       "lastName": "Pack"
+    }
+  ],
+  "inbox": [
+    {
+      "id": "dc74",
+      "fullName": "Rowel Malmström",
+      "email": "rowel@malmstrom.se",
+      "massage": "Hej, hoppas att jag får ett G för denna uppgiften, kära lärare. Jag har jobbat så hårt att få allt att funka. Jag vet att jag har mycket att lära mig, men jag hoppas så att detta är värt ett G.\n\nI bland var det svårt att få det som jag vill, och jag vet inte om jag har gjort min kod på det bästa sättet. Även om jag har dessa oron under mig, var allt väldigt roligt att göra :)"
     }
   ]
 }
